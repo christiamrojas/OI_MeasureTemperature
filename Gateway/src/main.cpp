@@ -65,7 +65,7 @@ void setup()
     for(uint16_t d=0;d<(16*32); d++)
       Register[d] = 0xff;
                 
-    xTaskCreatePinnedToCore(LoRa_Task,"Task_LoRaReception",1024*11,NULL,2,NULL,1);
+    xTaskCreatePinnedToCore(LoRa_Task,"Task_LoRaReception",1024*18,NULL,2,NULL,1);
     xTaskCreatePinnedToCore(ModTcp_Task,"Task_ModbusTcp",1024*6,NULL,2,NULL,0);
     xTaskCreatePinnedToCore(Btserial_Task,"Task_Btserial",1024*5,NULL,2,NULL,0);
     

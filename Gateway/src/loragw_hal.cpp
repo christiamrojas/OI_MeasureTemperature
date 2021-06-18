@@ -176,7 +176,7 @@ static int8_t cal_offset_b_q[8]; /* TX Q offset for radio B */
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE FUNCTIONS DECLARATION ---------------------------------------- */
 
-int load_firmware(uint8_t target, uint8_t *firmware, uint16_t size);
+int load_firmware(uint8_t target,uint8_t *firmware, uint16_t size);
 
 void lgw_constant_adjust(void);
 
@@ -715,9 +715,13 @@ int lgw_start(void) {
     /* switch on and reset the radios (also starts the 32 MHz XTAL) */
     lgw_reg_w(LGW_RADIO_A_EN,1);
     lgw_reg_w(LGW_RADIO_B_EN,1);
-    wait_ms(500); /* TODO: optimize */
+    vTaskDelay(500/portTICK_PERIOD_MS);
+    //wait_ms(500); /* TODO: optimize */
+
+
     lgw_reg_w(LGW_RADIO_RST,1);
-    wait_ms(5);
+    vTaskDelay(5/portTICK_PERIOD_MS);
+    //wait_ms(5);
     lgw_reg_w(LGW_RADIO_RST,0);
 
     /* setup the radios */    
@@ -772,7 +776,7 @@ int lgw_start(void) {
     cal_time = 2300; /* measured between 2.1 and 2.2 sec, because 1 TX only */
     
     /* Load the calibration firmware  */
-    load_firmware(MCU_AGC, cal_firmware, MCU_AGC_FW_BYTE);
+    load_firmware(MCU_AGC, (uint8_t*)cal_firmware, MCU_AGC_FW_BYTE);
     lgw_reg_w(LGW_FORCE_HOST_RADIO_CTRL, 0); /* gives to AGC MCU the control of the radios */
     lgw_reg_w(LGW_RADIO_SELECT, cal_cmd); /* send calibration configuration word */
     lgw_reg_w(LGW_MCU_RST_1, 0);
@@ -793,7 +797,8 @@ int lgw_start(void) {
 
     /* Wait for calibration to end */
     DEBUG_PRINTF("Note: calibration started (time: %u ms)\n", cal_time);
-    wait_ms(cal_time); /* Wait for end of calibration */
+    vTaskDelay(cal_time/portTICK_PERIOD_MS);
+    //wait_ms(cal_time); /* Wait for end of calibration */
     lgw_reg_w(LGW_EMERGENCY_FORCE_HOST_CTRL, 1); /* Take back control */
 
     /* Get calibration status */
@@ -948,8 +953,8 @@ int lgw_start(void) {
     }
 
     /* Load firmware */
-    load_firmware(MCU_ARB, arb_firmware, MCU_ARB_FW_BYTE);
-    load_firmware(MCU_AGC, agc_firmware, MCU_AGC_FW_BYTE);
+    load_firmware(MCU_ARB,(uint8_t*)arb_firmware, MCU_ARB_FW_BYTE);
+    load_firmware(MCU_AGC,(uint8_t*)agc_firmware, MCU_AGC_FW_BYTE);
 
     /* gives the AGC MCU control over radio, RF front-end and filter gain */
     lgw_reg_w(LGW_FORCE_HOST_RADIO_CTRL, 0);
@@ -979,7 +984,8 @@ int lgw_start(void) {
     }
 
     DEBUG_MSG("Info: Initialising AGC firmware...\n");
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
 
     lgw_reg_r(LGW_MCU_AGC_STATUS, &read_val);
     if (read_val != 0x10) {
@@ -990,10 +996,12 @@ int lgw_start(void) {
     /* Update Tx gain LUT and start AGC */
     for (i = 0; i < txgain_lut.size; ++i) {
         lgw_reg_w(LGW_RADIO_SELECT, AGC_CMD_WAIT); /* start a transaction */
-        wait_ms(1);
+        vTaskDelay(1/portTICK_PERIOD_MS);
+        //wait_ms(1);
         load_val = txgain_lut.lut[i].mix_gain + (16 * txgain_lut.lut[i].dac_gain) + (64 * txgain_lut.lut[i].pa_gain);
         lgw_reg_w(LGW_RADIO_SELECT, load_val);
-        wait_ms(1);
+        vTaskDelay(1/portTICK_PERIOD_MS);
+        //wait_ms(1);
         lgw_reg_r(LGW_MCU_AGC_STATUS, &read_val);
         if (read_val != (0x30 + i)) {
             DEBUG_PRINTF("ERROR: AGC FIRMWARE INITIALIZATION FAILURE, STATUS 0x%02X\n", (uint8_t)read_val);
@@ -1003,10 +1011,12 @@ int lgw_start(void) {
     /* As the AGC fw is waiting for 16 entries, we need to abort the transaction if we get less entries */
     if (txgain_lut.size < TX_GAIN_LUT_SIZE_MAX) {
         lgw_reg_w(LGW_RADIO_SELECT, AGC_CMD_WAIT);
-        wait_ms(1);
+        vTaskDelay(1/portTICK_PERIOD_MS);
+        //wait_ms(1);
         load_val = AGC_CMD_ABORT;
         lgw_reg_w(LGW_RADIO_SELECT, load_val);
-        wait_ms(1);
+        vTaskDelay(1/portTICK_PERIOD_MS);
+        //wait_ms(1);
         lgw_reg_r(LGW_MCU_AGC_STATUS, &read_val);
         if (read_val != 0x30) {
             DEBUG_PRINTF("ERROR: AGC FIRMWARE INITIALIZATION FAILURE, STATUS 0x%02X\n", (uint8_t)read_val);
@@ -1016,9 +1026,11 @@ int lgw_start(void) {
 
     /* Load Tx freq MSBs (always 3 if f > 768 for SX1257 or f > 384 for SX1255 */
     lgw_reg_w(LGW_RADIO_SELECT, AGC_CMD_WAIT);
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
     lgw_reg_w(LGW_RADIO_SELECT, 3);
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
     lgw_reg_r(LGW_MCU_AGC_STATUS, &read_val);
     if (read_val != 0x33) {
         DEBUG_PRINTF("ERROR: AGC FIRMWARE INITIALIZATION FAILURE, STATUS 0x%02X\n", (uint8_t)read_val);
@@ -1027,9 +1039,11 @@ int lgw_start(void) {
 
     /* Load chan_select firmware option */
     lgw_reg_w(LGW_RADIO_SELECT, AGC_CMD_WAIT);
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
     lgw_reg_w(LGW_RADIO_SELECT, 0);
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
     lgw_reg_r(LGW_MCU_AGC_STATUS, &read_val);
     if (read_val != 0x30) {
         DEBUG_PRINTF("ERROR: AGC FIRMWARE INITIALIZATION FAILURE, STATUS 0x%02X\n", (uint8_t)read_val);
@@ -1038,9 +1052,11 @@ int lgw_start(void) {
 
     /* End AGC firmware init and check status */
     lgw_reg_w(LGW_RADIO_SELECT, AGC_CMD_WAIT);
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
     lgw_reg_w(LGW_RADIO_SELECT, radio_select); /* Load intended value of RADIO_SELECT */
-    wait_ms(1);
+    vTaskDelay(1/portTICK_PERIOD_MS);
+    //wait_ms(1);
     DEBUG_MSG("Info: putting back original RADIO_SELECT value\n");
     lgw_reg_r(LGW_MCU_AGC_STATUS, &read_val);
     if (read_val != 0x40) {

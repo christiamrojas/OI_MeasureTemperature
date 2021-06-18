@@ -289,7 +289,8 @@ int lgw_setup_sx125x(uint8_t rf_chain, uint8_t rf_clkout, bool rf_enable, uint8_
             sx125x_write(rf_chain, 0x00, 3); /* Enable RX (PLL+FE) */
             ++cpt_attempts;
             DEBUG_PRINTF("Note: SX125x #%d PLL start (attempt %d)\n", rf_chain, cpt_attempts);
-            wait_ms(1);
+            vTaskDelay(1/portTICK_PERIOD_MS);
+            //wait_ms(1);
         } while((sx125x_read(rf_chain, 0x11) & 0x02) == 0);
     } else {
         DEBUG_PRINTF("Note: SX125x #%d kept in standby mode\n", rf_chain);
