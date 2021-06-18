@@ -25,22 +25,6 @@ BluetoothSerial Btserial;               // Bluetooth class
 RTC Rtc;                                // Real time clock class
 uint8_t status=0;                       // Status of devices
 
-#ifdef Bt_Review_Devices
-#define REMOVE_BONDED_DEVICES 1   // <- Set to 0 to view all bonded devices addresses, set to 1 to remove
-#define PAIR_MAX_DEVICES 20
-uint8_t pairedDeviceBtAddr[PAIR_MAX_DEVICES][6];
-char bda_str[18];
-
-char *bda2str(const uint8_t* bda, char *str, size_t size)
-{
-  if (bda == NULL || str == NULL || size < 18) {
-    return NULL;
-  }
-  sprintf(str, "%02x:%02x:%02x:%02x:%02x:%02x",
-          bda[0], bda[1], bda[2], bda[3], bda[4], bda[5]);
-  return str;
-}
-#endif
 //-----------------------------------------------
 //  Main Program
 //-----------------------------------------------
@@ -69,54 +53,21 @@ void setup()
         Serial.println("OK");
     else
         Serial.println("KO");
-
-    #ifndef Bt_Review_Devices
+    
     Serial.print("BLUETOOTH: ");
     if(Btserial.begin("GW_Diacsa")==true)
         Serial.println("OK");
     else
         Serial.println("KO");
-    #endif
-    
-    #ifdef Bt_Review_Devices
-    if(!btStart())  Serial.println("Failed to initialize controller");
-    if(esp_bluedroid_init() != ESP_OK) Serial.println("Failed to initialize bluedroid");       
-    if(esp_bluedroid_enable() != ESP_OK) Serial.println("Failed to enable bluedroid");
-    Serial.print("ESP32 bluetooth address: "); Serial.println(bda2str(esp_bt_dev_get_address(), bda_str, 18));
-    
-    int count = esp_bt_gap_get_bond_device_num();
-    if(!count)
-        Serial.println("No bonded device found.");
-    else {
-        Serial.print("Bonded device count: "); Serial.println(count);
-
-        esp_err_t tError =  esp_bt_gap_get_bond_device_list(&count, pairedDeviceBtAddr);
-        if(ESP_OK == tError) {
-            for(int i = 0; i < count; i++) {
-                Serial.print("Found bonded device # "); Serial.print(i); Serial.print(" -> ");
-                Serial.println(bda2str(pairedDeviceBtAddr[i], bda_str, 18));     
-                if(REMOVE_BONDED_DEVICES) {
-                esp_err_t tError = esp_bt_gap_remove_bond_device(pairedDeviceBtAddr[i]);
-                if(ESP_OK == tError)
-                    Serial.print("Removed bonded device # "); 
-                else 
-                    Serial.print("Failed to remove bonded device # ");          
-                Serial.println(i);
-                }
-            }        
-        }
-    }
-    while(1);
-    #endif
-
+        
     Node_TxConfig.Update = false; 
     
     for(uint16_t d=0;d<(16*32); d++)
       Register[d] = 0xff;
                 
-    xTaskCreatePinnedToCore(LoRa_Task,"Task_LoRaReception",16384,NULL,2,NULL,1);
-    xTaskCreatePinnedToCore(ModTcp_Task,"Task_ModbusTcp",8192,NULL,2,NULL,0);
-    xTaskCreatePinnedToCore(Btserial_Task,"Task_Btserial",4096,NULL,2,NULL,0);
+    xTaskCreatePinnedToCore(LoRa_Task,"Task_LoRaReception",1024*11,NULL,2,NULL,1);
+    xTaskCreatePinnedToCore(ModTcp_Task,"Task_ModbusTcp",1024*6,NULL,2,NULL,0);
+    xTaskCreatePinnedToCore(Btserial_Task,"Task_Btserial",1024*5,NULL,2,NULL,0);
     
     vTaskDelete(NULL);    
 }
@@ -139,10 +90,7 @@ void ModTcp_Task(void *pvParameters)
         Client = server.available();        
         if(!Client) continue;
         ModTcp_ClientConnected(&Client,Register); 
-        #ifdef Modbus_Debug_Memory                   
-        Serial.print("Stack memory remain(Words): ");Serial.println(uxTaskGetStackHighWaterMark(NULL));
-        Serial.print("Heap memory total  (Bytes): ");Serial.println(xPortGetFreeHeapSize());
-        #endif
+        
     }
 }
 
@@ -162,15 +110,16 @@ void LoRa_Task(void *pvParameters)
         vTaskDelay(100/portTICK_PERIOD_MS);
         LoRa_Transmit_ConfigNode(&Node_TxConfig);
         len_rxpkt = (sizeof(rxpkt) / sizeof((rxpkt)[0]));
+        #ifdef LoRa_Debug_Memory
+        Serial.print("Stack memory remain(Words): ");Serial.println(uxTaskGetStackHighWaterMark(NULL));
+        Serial.print("Heap memory total  (Bytes): ");Serial.println(xPortGetFreeHeapSize());
+        #endif
         if(LoRa_PacketReceived_Check(rxpkt,len_rxpkt,&nb_pkt)==false) continue;
         digitalWrite(PIN_LED_MSG,HIGH);
         LoRa_PacketReceived_Process(rxpkt,&nb_pkt,&Rtc,Register);        
         vTaskDelay(200/portTICK_PERIOD_MS);
         digitalWrite(PIN_LED_MSG,LOW);
-        #ifdef LoRa_Debug_Memory
-        Serial.print("Stack memory remain(Words): ");Serial.println(uxTaskGetStackHighWaterMark(NULL));
-        Serial.print("Heap memory total  (Bytes): ");Serial.println(xPortGetFreeHeapSize());
-        #endif
+        
     }
 }
 

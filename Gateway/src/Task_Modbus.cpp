@@ -14,7 +14,10 @@ void ModTcp_ClientConnected(WiFiClient *client,uint8_t *pReg)
     {
       vTaskDelay(100/portTICK_PERIOD_MS);
       if(client->available()==0) continue;      
-      
+      #ifdef Modbus_Debug_Memory                   
+        Serial.print("Stack memory remain(Words): ");Serial.println(uxTaskGetStackHighWaterMark(NULL));
+        Serial.print("Heap memory total  (Bytes): ");Serial.println(xPortGetFreeHeapSize());
+        #endif
       do{
         while(client->available()!=0){
           d = client->read();

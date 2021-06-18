@@ -27,7 +27,7 @@ bool RTC::Write(uint8_t hour, uint8_t minute, uint8_t second, uint8_t day, uint8
     dat_rtc[4]  = month;
     dat_rtc[5]  = year;
     d           = 0x90;
-  
+
     ok  = I2C_write(0x6F,7,&d,1);         // Set Status
     ok &= I2C_write(0x6F,0,dat_rtc,6);    // Set time-date
     ok &= I2C_write(0x6F,7,&d,1);         // Read Status
@@ -57,15 +57,7 @@ bool RTC::Read(void)
     second = temp[0];
     day    = temp[3];
     month  = temp[4];
-    year   = temp[5];
-    /*
-    Serial.print(hour,HEX); Serial.print(" ");
-    Serial.print(minute,HEX); Serial.print(" ");
-    Serial.print(second,HEX); Serial.print(" ");
-
-    Serial.print(day,HEX); Serial.print(" ");
-    Serial.print(month,HEX); Serial.print(" ");
-    Serial.print(year,HEX); Serial.println("");*/
+    year   = temp[5];    
 
     return true;
 }
@@ -73,15 +65,7 @@ bool RTC::Read(void)
 
 bool RTC::Bcd2Txt(void)
 { 
-    char Yh,Yl,Mh,Ml,Dh,Dl,Hh,Hl,MIh,MIl,Sh,Sl;
-    /*
-    Serial.print(hour,HEX); Serial.print(" ");
-    Serial.print(minute,HEX); Serial.print(" ");
-    Serial.print(second,HEX); Serial.print(" ");
-
-    Serial.print(day,HEX); Serial.print(" ");
-    Serial.print(month,HEX); Serial.print(" ");
-    Serial.print(year,HEX); Serial.println("");*/
+    char Yh,Yl,Mh,Ml,Dh,Dl,Hh,Hl,MIh,MIl,Sh,Sl;    
 
     if (!ByteBcd2Txt(year,&Yh,&Yl)) return false;
     if (!ByteBcd2Txt(month,&Mh,&Ml)) return false;    
@@ -89,8 +73,6 @@ bool RTC::Bcd2Txt(void)
     if (!ByteBcd2Txt(hour,&Hh,&Hl)) return false;
     if (!ByteBcd2Txt(minute,&MIh,&MIl)) return false;    
     if (!ByteBcd2Txt(second,&Sh,&Sl)) return false;
-
-  
 
     txt_datetime[0]=Hh;   txt_datetime[1]=Hl;   
     txt_datetime[3]=MIh;  txt_datetime[4]=MIl;  
@@ -108,6 +90,7 @@ bool RTC::ByteBcd2Txt(byte bcd,char *H,char *L)
   if (*H>'9') return false;
   *L=(bcd & 0xf)|0x30;
   if (*L>'9') return false;
+  
   return true;
 }
 
@@ -121,12 +104,7 @@ bool RTC::I2C_read(uint8_t device, uint8_t dir, uint8_t *data, uint8_t n)
     ok &= (Wire.endTransmission()==0);
     ok &= (Wire.requestFrom(device,n)==n);
     for (i=0;i<n;i++)    
-        data[i]=Wire.read();        
-    /*
-    for (i=0;i<n;i++){
-        Serial.print(data[i],HEX); Serial.print(" ");
-    }
-    Serial.println("");*/
+        data[i]=Wire.read();    
     return ok;
 }
 

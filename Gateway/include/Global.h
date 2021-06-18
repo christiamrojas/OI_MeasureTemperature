@@ -12,7 +12,6 @@
 
 //#define Bt_Debug
 //#define Bt_Debug_Memory
-//#define Bt_Review_Devices
 
 #define EE_Size             140
 #define EE_Addr_Ssid        0

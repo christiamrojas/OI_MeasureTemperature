@@ -160,11 +160,7 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
 
 //------------------------------------------------------------------------
 bool LoRa_GatewayInit(void)
-{
-    /*digitalWrite(17,LOW);
-    vTaskDelay(2000/portTICK_PERIOD_MS);
-    digitalWrite(17,HIGH);*/
-
+{    
     LoRa_SX1301_Configuration();          
   
     if(lgw_start() != LGW_HAL_SUCCESS){
