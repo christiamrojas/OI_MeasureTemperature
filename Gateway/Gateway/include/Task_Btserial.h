@@ -11,7 +11,6 @@
 
 void Btserial_Task(void *pvParameters);
 
-void Btserial_Init(BluetoothSerial *Btserial);
 void Btserial_CheckCommand(BluetoothSerial *Btserial, RTC *rtc, Node_TxConfig_Struct *Node_TxConfig);
 bool Btserial_CheckCommand_SetDateTime(char *p, BluetoothSerial *Btserial, RTC *rtc);
 bool Btserial_CheckCommand_SetTxPeriod(char *p, BluetoothSerial *Btserial, Node_TxConfig_Struct *Node_TxConfig);

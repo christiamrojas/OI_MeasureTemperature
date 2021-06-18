@@ -1,11 +1,5 @@
 #include "Task_Btserial.h"
 
-
-void Btserial_Init(BluetoothSerial *btserial)
-{
-    btserial->begin("GW_Diacsa");
-}
-
 void Btserial_CheckCommand(BluetoothSerial *Btserial, RTC *rtc, Node_TxConfig_Struct *Node_TxConfig)
 {
     static char cad[128];
@@ -24,8 +18,8 @@ void Btserial_CheckCommand(BluetoothSerial *Btserial, RTC *rtc, Node_TxConfig_St
     if(Btserial_CheckCommand_SetTxPeriod(cad,Btserial,Node_TxConfig)) return; 
     
 }
-
-//Example: Node=01 0 12 0100\n
+// Channel = 916800000,917000000,917200000,917400000,917600000,917800000,918000000,918200000
+//Example: Node=01 6 12 0100\n (Node Channel SpreadF Sampling)
 bool Btserial_CheckCommand_SetTxPeriod(char *cad, BluetoothSerial *Btserial, Node_TxConfig_Struct *Node_TxConfig)
 {
     if(strncmp(cad,"Node=",5)!=0)   return false;
@@ -33,8 +27,8 @@ bool Btserial_CheckCommand_SetTxPeriod(char *cad, BluetoothSerial *Btserial, Nod
     
     uint16_t d; 
     d = (cad[5]-'0')*10 + cad[6]-'0';
-    if(d>32)    return false; 
-    Node_TxConfig->NodeAddr = (uint8_t)(d); 
+    if( (d>32) || (d==0) )    return false; 
+    Node_TxConfig->NodeAddr = (uint8_t)(d)-1; 
 
     d = cad[8]-'0';
     if(d>8)    return false; 

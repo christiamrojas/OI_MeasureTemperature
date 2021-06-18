@@ -89,7 +89,7 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
       reg[addr+5] = rtc->year;
 
       temp = (p->payload[1]<<8) + p->payload[2];      
-      if( (temp & 0x02) == 1 )  reg[16*32+1] |= (1<<id);
+      if( (temp & 0x02) == 1 )  reg[addr+14] = 0xff;
       if( (temp & 0x01) == 1 )  temp = 0xffff;
       else temp >>= 4; 
       reg[addr+6] = (temp>>8) & 0xff;
@@ -101,7 +101,7 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
 
 
       temp = (p->payload[3]<<8) + p->payload[4];
-      if( (temp & 0x02) == 1 )  reg[16*32+1] |= (1<<id);
+      if( (temp & 0x02) == 1 )  reg[addr+14] = 0xff;
       if( (temp & 0x01) == 1 )  temp = 0xffff;
       else temp >>= 4; 
       reg[addr+8] = (temp>>8) & 0xff;
@@ -112,7 +112,7 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
       #endif
 
       temp = (p->payload[5]<<8) + p->payload[6];
-      if( (temp & 0x02) == 1 )  reg[16*32+1] |= (1<<id);
+      if( (temp & 0x02) == 1 )  reg[addr+14] = 0xff;
       if( (temp & 0x01) == 1 )  temp = 0xffff;
       else temp >>= 4; 
       reg[addr+10] = (temp>>8) & 0xff;
@@ -123,7 +123,7 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
       #endif
 
       temp = (p->payload[7]<<8) + p->payload[8];
-      if( (temp & 0x02) == 1 )  reg[16*32+1] |= (1<<id);
+      if( (temp & 0x02) == 1 )  reg[addr+14] = 0xff;
       if( (temp & 0x01) == 1 )  temp = 0xffff;
       else temp >>= 4; 
       reg[addr+12] = (temp>>8) & 0xff;
@@ -134,7 +134,7 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
       #endif
 
       int n; uint8_t t;
-      reg[addr+14] = 0;
+      
       if(id==0){        // Between [0xd7:0xbb]
         n = ((p->payload[9]-0xbb)*100/0x1c);
         if(n>100) n=100;
@@ -161,6 +161,10 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
 //------------------------------------------------------------------------
 bool LoRa_GatewayInit(void)
 {
+    /*digitalWrite(17,LOW);
+    vTaskDelay(2000/portTICK_PERIOD_MS);
+    digitalWrite(17,HIGH);*/
+
     LoRa_SX1301_Configuration();          
   
     if(lgw_start() != LGW_HAL_SUCCESS){

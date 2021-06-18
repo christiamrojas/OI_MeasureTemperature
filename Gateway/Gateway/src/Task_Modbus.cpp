@@ -49,12 +49,14 @@ uint8_t ModTcp_RxTx(WiFiClient *client, uint8_t *pIn, uint8_t *pReg)
 {
     uint8_t device_id;
     
-    if ((pIn[4]!=0)||(pIn[5]!=6))       return 0;     // Length = 6
+    if ((pIn[4]!=0)||(pIn[5]!=6))             return 0;     // Length = 6
     device_id = pIn[6];                                       
-    if (device_id>31)       return 0;                 // Id [0:31]         
-    if (pIn[7]!=3)          return 0;                 // Function Holding Register
-    if ((pIn[8]!=0x0f)||(pIn[9]!=0xa0)) return 0;     // Address 4000
-    if ((pIn[10]!=0)||(pIn[11]!=8))     return 0;     // 8 words
+    if ( (device_id>32) || (device_id==0) )   return 0;     // Id [0:31]         
+    if (pIn[7]!=3)          return 0;                       // Function Holding Register
+    if ((pIn[8]!=0x0f)||(pIn[9]!=0xa0))       return 0;     // Address 4000
+    if ((pIn[10]!=0)||(pIn[11]!=8))           return 0;     // 8 words
+    
+    device_id--;
     
     pIn[5]= 16+3;                                     // Length
     pIn[8]= 16;                                       // Byte count
