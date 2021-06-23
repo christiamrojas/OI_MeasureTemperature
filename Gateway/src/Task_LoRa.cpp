@@ -3,6 +3,7 @@
 //------------------------------------------------------------------------
 
 #include "Task_LoRa.h"
+#include "loragw_spi.h"
 
 const uint32_t FrequencyTable[8] = {916800000,917000000,917200000,917400000,917600000,917800000,918000000,918200000};
 
@@ -43,8 +44,7 @@ void LoRa_Transmit_ConfigNode(Node_TxConfig_Struct *Node_TxConfig)
       Serial.println("LoRa: TX timeout");
       return; 
     }
-     
-    
+         
     if(lgw_send(txpkt)==LGW_HAL_ERROR)
       Serial.println("LoRa: TX KO");
     else
@@ -157,16 +157,30 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
 
     return true;
 }
-
+#define _reset      17
 //------------------------------------------------------------------------
 bool LoRa_GatewayInit(void)
 {    
     LoRa_SX1301_Configuration();          
   
-    if(lgw_start() != LGW_HAL_SUCCESS){
+    /*if(lgw_start() != LGW_HAL_SUCCESS){
       Serial.println("LoRa: Failed to start Gateway");
+      digitalWrite(_reset, LOW);
+      vTaskDelay(2000/portTICK_PERIOD_MS);
+      digitalWrite(_reset, HIGH);
+      vTaskDelay(1000/portTICK_PERIOD_MS);
+      ESP.restart();
       return false; 
-    }      
+    }    */
+
+    while (lgw_start() != LGW_HAL_SUCCESS){
+      Serial.println("LoRa: Failed to start Gateway");
+      //digitalWrite(_reset, LOW);
+      //ESP.restart();
+      //return false; 
+      lgw_disconnect();
+    }
+
     Serial.println("LoRa: Gateway started");
     return true;       
 }

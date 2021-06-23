@@ -26,7 +26,7 @@ Maintainer: Sylvain Miermont
 
 #include "loragw_reg.h"
 #include "loragw_hal.h"
-#include "loragw_aux.h"
+//#include "loragw_aux.h"
 #include "loragw_spi.h"
 #include "loragw_radio.h"
 #include "loragw_debug.h"   /* Activar mensajes seriales */
@@ -56,7 +56,7 @@ Maintainer: Sylvain Miermont
                                                 return LGW_HAL_ERROR;}\
                                           }
 #else
-    #define DEBUG_MSG(str)
+    #define DEBUG_MSG(str)                
     #define DEBUG_PRINTF(fmt, args...)
     #define DEBUG_ARRAY(a,b,c)            for(a=0;a!=0;){}
     #define CHECK_NULL(a)                 if(a==NULL){return LGW_HAL_ERROR;}
@@ -228,6 +228,7 @@ int load_firmware(uint8_t target, uint8_t *firmware, uint16_t size) {
     /* Read back firmware code for check */
     lgw_reg_r( LGW_MCU_PROM_DATA, &dummy ); /* bug workaround */
     lgw_reg_rb( LGW_MCU_PROM_DATA, fw_check, size );
+
 
     if (memcmp(firmware, fw_check, size) != 0) {
         printf ("ERROR: Failed to load fw %d\n", (int)target);
@@ -704,7 +705,7 @@ int lgw_start(void) {
         DEBUG_MSG("ERROR: FAIL TO CONNECT BOARD\n");
         return LGW_HAL_ERROR;
     }
-
+    
     /* reset the registers (also shuts the radios down) */
     lgw_soft_reset();
 
@@ -777,6 +778,7 @@ int lgw_start(void) {
     
     /* Load the calibration firmware  */
     load_firmware(MCU_AGC, (uint8_t*)cal_firmware, MCU_AGC_FW_BYTE);
+    //Serial.println("calibration 1");
     lgw_reg_w(LGW_FORCE_HOST_RADIO_CTRL, 0); /* gives to AGC MCU the control of the radios */
     lgw_reg_w(LGW_RADIO_SELECT, cal_cmd); /* send calibration configuration word */
     lgw_reg_w(LGW_MCU_RST_1, 0);
@@ -792,8 +794,10 @@ int lgw_start(void) {
         return -1;
     }
 
+    
     lgw_reg_w(LGW_PAGE_REG, 3); /* Calibration will start on this condition as soon as MCU can talk to concentrator registers */
     lgw_reg_w(LGW_EMERGENCY_FORCE_HOST_CTRL, 0); /* Give control of concentrator registers to MCU */
+
 
     /* Wait for calibration to end */
     DEBUG_PRINTF("Note: calibration started (time: %u ms)\n", cal_time);
@@ -816,6 +820,8 @@ int lgw_start(void) {
     */
     if ((cal_status & 0x81) != 0x81) {
         DEBUG_PRINTF("ERROR: CALIBRATION FAILURE (STATUS = %u)\n", cal_status);
+        //Serial.println("estoy aqui");
+        //Serial.println(cal_status);
         return LGW_HAL_ERROR;
     } else {
         DEBUG_PRINTF("Note: calibration finished (status = %u)\n", cal_status);
@@ -838,7 +844,7 @@ int lgw_start(void) {
     if (rf_enable[1] && rf_tx_enable[1] && ((cal_status & 0x40) == 0)) {
         DEBUG_MSG("WARNING: problem in calibration of radio B for TX DC offset\n");
     }
-
+    
     /* Get TX DC offset values */
     for(i=0; i<=7; ++i) {
         lgw_reg_w(LGW_DBG_AGC_MCU_RAM_ADDR, 0xA0+i);

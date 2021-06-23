@@ -15,7 +15,7 @@
 #include "loragw_conf.h"
 #include "loragw_hal.h"
 #include "loragw_reg.h"
-#include "loragw_aux.h"
+//#include "loragw_aux.h"
 #include "loragw_debug.h"
 
 #define LORA_POWER_27       27

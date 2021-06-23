@@ -47,7 +47,7 @@ Maintainer: Sylvain Miermont
                                                 return LGW_REG_ERROR;}\
                                           }
 #else
-    #define DEBUG_MSG(str)
+    #define DEBUG_MSG(str)              //Serial.print(str)
     #define DEBUG_PRINTF(fmt, args...)
     #define CHECK_NULL(a)               if(a==NULL){return LGW_REG_ERROR;}
 #endif
@@ -533,7 +533,7 @@ int lgw_connect(bool spi_only) {
             DEBUG_PRINTF("ERROR: NOT EXPECTED CHIP VERSION (v%u)\n", u);
             return LGW_REG_ERROR;
         }
-
+        //Serial.println(u);
         /* write 0 to the page/reset register */
         spi_stat = lgw_spi_w(lgw_spi_target, lgw_spi_mux_mode, LGW_SPI_MUX_TARGET_SX1301, loregs[LGW_PAGE_REG].addr, 0);
         if (spi_stat != LGW_SPI_SUCCESS) {

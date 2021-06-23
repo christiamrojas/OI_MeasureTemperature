@@ -23,7 +23,7 @@ Maintainer: Michael Coracin
 
 #include "loragw_sx125x.h"
 #include "loragw_spi.h"
-#include "loragw_aux.h"
+//#include "loragw_aux.h"
 #include "loragw_reg.h"
 #include "loragw_hal.h"
 #include "loragw_radio.h"

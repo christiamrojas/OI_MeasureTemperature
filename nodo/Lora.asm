@@ -4,8 +4,8 @@
 
 .equ Lora_BandWidth			=	125000
 .equ Lora_SpreadFactor		=	12
-.equ Lora_Frequency			=	915000000		
-.equ Lora_SyncWord			=	0x12				
+.equ Lora_Frequency			=	918000000		
+.equ Lora_SyncWord			=	0x34				
 .equ Lora_CodeRate			=	5
 .equ Lora_PreambleLength	=	8				
 .equ Lora_CRCEnable			=	1				; [0:1]
