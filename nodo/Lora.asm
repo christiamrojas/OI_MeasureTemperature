@@ -4,12 +4,20 @@
 
 .equ Lora_BandWidth			=	125000
 .equ Lora_SpreadFactor		=	12
-.equ Lora_Frequency			=	918000000		
-.equ Lora_SyncWord			=	0x34				
+;.equ Lora_Frequency			=	916800000		; Ch 0
+;.equ Lora_Frequency			=	917000000		; Ch 1
+;.equ Lora_Frequency			=	917200000		; Ch 2
+.equ Lora_Frequency			=	917400000		; Ch 3
+;.equ Lora_Frequency			=	917600000		; Ch 4	
+;.equ Lora_Frequency			=	917800000		; Ch 5
+;.equ Lora_Frequency			=	918000000		; Ch 6
+;.equ Lora_Frequency			=	918200000		; Ch 7
+
+.equ Lora_SyncWord			=	0x34			
 .equ Lora_CodeRate			=	5
 .equ Lora_PreambleLength	=	8				
 .equ Lora_CRCEnable			=	1				; [0:1]
-.equ Lora_TxPower			=	14				; [14:20] dBm
+.equ Lora_TxPower			=	20				; [14:20] dBm
 
 ;----------------------------------------------------
 ; Lora Transmission
@@ -327,8 +335,16 @@ Lora_Config:
 	ldi		r17,(Lora_CRCEnable<<2)		
 	or		r17,r18
 	rcall	Lora_WReg
+
 	ldi		r16,Reg_Modem_Config_3				
-	ldi		r17,Lora_LowDROptimize|0x04				
+	lds		r17,Spread_Factor
+	cpi		r17,0xb0
+	brlo	LoRa_SetSF_low
+	ldi		r17,0x0c
+	rjmp	LoRa_SetSF
+LoRa_SetSF_low:
+	ldi		r17,0x04
+LoRa_SetSF:
 	rcall	Lora_WReg
 
 	ldi		r16,Reg_Modem_Config_1			; Set bandwidth & CodingRate & ImplicitMode

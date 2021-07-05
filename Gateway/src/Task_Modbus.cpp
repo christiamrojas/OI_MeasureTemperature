@@ -59,12 +59,12 @@ uint8_t ModTcp_RxTx(WiFiClient *client, uint8_t *pIn, uint8_t *pReg)
     if ((pIn[8]!=0x0f)||(pIn[9]!=0xa0))       return 0;     // Address 4000
     if ((pIn[10]!=0)||(pIn[11]!=8))           return 0;     // 8 words
             
-    pIn[5]= 16+3;                                     // Length
-    pIn[8]= 16;                                       // Byte count
-    for (uint8_t i=0;i<16;i++)                        // Data
+    pIn[5]= 16+3;                                           // Length
+    pIn[8]= 16;                                             // Byte count
+    for (uint8_t i=0;i<16;i++)                              // Data
       pIn[9+i]=pReg[16*device_id+i];
     
-    pReg[16*device_id] = 0xff;                        // Data register readed
+    pReg[16*device_id] = 0xff;                              // Data register readed
     client->write(pIn,25);
 
     #ifdef Modbus_Debug

@@ -4,7 +4,7 @@
 #include "Arduino.h"
 #include <WiFi.h>
 
-//#define LoRa_Debug
+#define LoRa_Debug
 //#define LoRa_Debug_Memory
 
 //#define Modbus_Debug

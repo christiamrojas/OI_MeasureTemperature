@@ -66,8 +66,9 @@ Tmr_ms:	.byte 1
 ; Main program
 ;----------------------------------------------------
 .cseg
-TaskMain:	
-	;rjmp	Test
+TaskMain:		
+	;rjmp   Read_BatMin	
+	;rjmp   Read_BatCritic	
 	rcall	Battery_Read
 	rcall	Battery_CheckIfCritical					; If battery low turn off device
 	rcall	Eeprom_ReadSamplingTime					; Read sampling time
@@ -111,40 +112,45 @@ DelayMs_Loop:
 	ret
 
 ;----------------------------------------------------
-Test:	
-	ldi		r16,0x80
-	sts		porta_outset,r16
-	ldi		r17,ADC_REFSEL_INTVCC_gc
-	ldi		r18,ADC_SAMPNUM_512X_gc
-	rcall	Adc_on
+Read_BatMin:
+	ldi		r16,0x08
+	sts		porta_outset,r16						; Enable power for battery measurement
+	ldi		r17,ADC_REFSEL_INT1V_gc 
+	ldi		r18,ADC_SAMPNUM_256X_gc
+	rcall	Adc_On									; Configure Adc
 	ldi		r16,3
-	rcall	DelayMs	
+	rcall	DelayMs									; Delay for stable signal
+	ldi		r16, ADC_CH_MUXPOS_PIN2_gc
+	rcall	Adc_Read								; Read battery
+	lsl		r17
+	rol		r16
+	ldi		xh,high(EEdir_BatMin)
+	ldi		xl,low(EEdir_BatMin)	
+	rcall	Eeprom_Write
+	ldi		r16,0x08
+	sts		porta_outclr,r16						; Disable power for battery measurement
+	rcall	Adc_Off									; Turn off Adc		
+Read_BatMin_End:
+	rjmp	Read_BatMin_End
 
-	ldi		r16, ADC_CH_MUXPOS_PIN8_gc
-	rcall	Adc_Read	
-	sts		Temporal,r16
-		
-	ldi		r16, ADC_CH_MUXPOS_PIN9_gc
-	rcall	Adc_Read	
-	sts		Temporal+1,r16
-	
-	lds		r16,Temporal
-	rcall	SerialNumber_Calculate
-	push	r16
-	lds		r16,Temporal+1
-	rcall	SerialNumber_Calculate
-	mov		r17,r16								; High value
-	pop		r16									; Low value
-	andi	r17,0x0f
-	swap	r17
-	or		r16,r17								; Serial number readed
-	mov		r17,r16								; Save value
-	andi	r16,0x1f							; Mask five bits
-	sts		Serial_Number,r16
-	andi	r17,0xe0
-	lsr		r17	
-	ldi		r16,0x50
-	add		r17,r16
-	sts		Spread_Factor,r17
-
-	rjmp Test
+;----------------------------------------------------
+Read_BatCritic:
+	ldi		r16,0x08
+	sts		porta_outset,r16						; Enable power for battery measurement
+	ldi		r17,ADC_REFSEL_INT1V_gc 
+	ldi		r18,ADC_SAMPNUM_256X_gc
+	rcall	Adc_On									; Configure Adc
+	ldi		r16,3
+	rcall	DelayMs									; Delay for stable signal
+	ldi		r16, ADC_CH_MUXPOS_PIN2_gc
+	rcall	Adc_Read								; Read battery
+	lsl		r17
+	rol		r16
+	ldi		xh,high(EEdir_BatCritic)
+	ldi		xl,low(EEdir_BatCritic)	
+	rcall	Eeprom_Write
+	ldi		r16,0x08
+	sts		porta_outclr,r16						; Disable power for battery measurement
+	rcall	Adc_Off									; Turn off Adc		
+Read_BatCritic_End:
+	rjmp	Read_BatCritic_End

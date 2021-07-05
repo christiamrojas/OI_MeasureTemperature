@@ -69,14 +69,6 @@
 	.equ DetectionThreshold = 0x0a
 .endif
 
-.equ Lora_SymbolDuration	=	10000/(Lora_BandWidth/(1<<Lora_SpreadFactor))
-
-.if Lora_SymbolDuration >16
-	.equ Lora_LowDROptimize = 0x08
-.else
-	.equ Lora_LowDROptimize = 0x00
-.endif
-
 .if Lora_BandWidth <= 7800
 	.equ Lora_BW = 0<<4
 .elif Lora_BandWidth <= 10400

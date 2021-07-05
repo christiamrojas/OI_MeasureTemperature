@@ -222,11 +222,9 @@ Thermocouples_Compare_End:
 ;----------------------------------------------------
 ; Battery reading
 ;----------------------------------------------------
-.if Node==0
-	.equ Battery_Low = 0xbb
-.else
-	.equ Battery_Low = 0xc1
-.endif
+
+.dseg 
+Battery:	.byte 1
 
 .cseg
  Battery_Read:	
@@ -241,16 +239,34 @@ Thermocouples_Compare_End:
 	rcall	Adc_Read								; Read battery
 	lsl		r17
 	rol		r16
-	sts		Battery_Level,r16
+	mov		r17,r16
+	sts		Battery,r17
+	ldi		xl,low(EEdir_Batmin)
+	ldi		xh,high(EEdir_Batmin)
+	ld		r16,x
+	sub		r17,r16
+	sbrc	r17,7
+	rjmp	Battery_Read_Neg
+	lsl		r17
+	lsl		r17
+	rjmp	Battery_read_ENd
+Battery_Read_Neg:
+	clr		r17
+Battery_read_ENd:
+	sts		Battery_level,r17
 	ldi		r16,0x08
 	sts		porta_outclr,r16						; Disable power for battery measurement
 	rcall	Adc_Off									; Turn off Adc
-	lds		r16,Battery_Level
+	lds		r16,Battery
 	ret		
 
 ;----------------------------------------------------
 Battery_CheckIfCritical:
-	cpi		r16,Battery_Low
+	mov		r17,r16
+	ldi		xh,high(EEdir_BatCritic)
+	ldi		xl,low(EEdir_BatCritic)
+	ld		r16,x	
+	cp		r17,r16
 	brsh	Battery_CheckIfCritical_End
 	ldi		r16,0x02
 	sts		porta_outset,r16						; Led High

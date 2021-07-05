@@ -21,15 +21,19 @@ void LoRa_Transmit_ConfigNode(Node_TxConfig_Struct *Node_TxConfig)
     txpkt.rf_power    = LORA_POWER_27;
     txpkt.modulation  = MOD_LORA;
     txpkt.bandwidth   = LORA_BW_125KHz;        
-    txpkt.datarate    = 1<<(Node_TxConfig->SpreadFactor-6);
+    txpkt.datarate    = 1<<(Node_TxConfig->SpreadFactor-1);
     txpkt.coderate    = LORA_CR_4_5;
     txpkt.invert_pol  = false;
     txpkt.preamble    = LORA_PREAMBLE;
     txpkt.size        = LORA_SIZETXMSG;
   
     txpkt.payload[0]  = Node_TxConfig->NodeAddr;
-    txpkt.payload[1]  = (Node_TxConfig->SampleTime>>8) & 0xff;
-    txpkt.payload[2]  = Node_TxConfig->SampleTime & 0xff;
+    txpkt.payload[1]  = Node_TxConfig->SampleTime & 0xff;    
+    txpkt.payload[2]  = (Node_TxConfig->SampleTime>>8) & 0xff;
+
+    Serial.print("Freq: "); Serial.println(FrequencyTable[Node_TxConfig->FrequencyId]);
+    Serial.print("SP  : "); Serial.println(Node_TxConfig->SpreadFactor);
+    Serial.print("Node: "); Serial.println(Node_TxConfig->NodeAddr);
 
     uint8_t status,timeout_counter=0; 
     do {
@@ -44,7 +48,8 @@ void LoRa_Transmit_ConfigNode(Node_TxConfig_Struct *Node_TxConfig)
       Serial.println("LoRa: TX timeout");
       return; 
     }
-         
+     
+    
     if(lgw_send(txpkt)==LGW_HAL_ERROR)
       Serial.println("LoRa: TX KO");
     else
@@ -132,24 +137,12 @@ bool LoRa_PacketReceived_Process(lgw_pkt_rx_s *rxpkt, int *nb_pkt, RTC *rtc, uin
       Serial.print(temp);
       Serial.print(" ");
       #endif
-
-      int n; uint8_t t;
       
-      if(id==0){        // Between [0xd7:0xbb]
-        n = ((p->payload[9]-0xbb)*100/0x1c);
-        if(n>100) n=100;
-        else if(n<0) n=0;
-        t = (uint8_t)(n);
-      }
-      else{             // Between [0xdc:0xc1]
-        n = ((p->payload[9]-0xc1)*100/0x1b);
-        if(n>100) n=100;
-        else if(n<0) n=0;
-        t = (uint8_t)(n);      
-      }
-      reg[addr+15] = t;
+      temp = p->payload[9];
+      if(temp>100) temp = 100;      
+      reg[addr+15] = (uint8_t)temp;
       #ifdef LoRa_Debug
-      Serial.print(t);
+      Serial.print(reg[addr+15]);
       Serial.println("");
       #endif
       

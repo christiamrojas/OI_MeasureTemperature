@@ -1,28 +1,28 @@
 
-AVRASM ver. 2.2.8  C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm Fri May 14 10:49:01 2021
+AVRASM ver. 2.2.8  C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm Thu Jun 24 17:51:48 2021
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\XMEGAE_DFP\1.2.51\avrasm\inc\ATxmega32e5def.inc'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(48): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\MultiTask.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(49): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Adc.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(50): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Eeprom.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(51): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\SpiL.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(52): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Lora.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(53): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\LoraReg.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(54): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Rtc.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(55): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Sensors.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(56): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskTimer.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Button.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(48): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\MultiTask.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(49): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Adc.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(50): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Eeprom.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(51): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\SpiL.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(52): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Lora.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(53): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\LoraReg.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(54): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Rtc.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(55): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Sensors.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(56): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskTimer.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(57): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Button.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\XMEGAE_DFP\1.2.51\avrasm\inc\ATxmega32e5def.inc'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(48): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\MultiTask.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(49): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Adc.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(50): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Eeprom.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(51): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\SpiL.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(52): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Lora.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(53): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\LoraReg.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(54): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Rtc.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(55): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Sensors.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(56): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskTimer.asm'
-C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Including file 'C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\Button.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(48): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\MultiTask.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(49): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Adc.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(50): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Eeprom.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(51): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\SpiL.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(52): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Lora.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(53): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\LoraReg.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(54): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Rtc.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(55): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Sensors.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(56): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskTimer.asm'
+C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\TaskMain.asm(57): Including file 'C:\Ismael\Gateway\OI_MeasureTemperature-master\OI_MeasureTemperature-master\nodo\Button.asm'
                                  
                                  ;----------------------------------------------------
                                  
@@ -6261,13 +6261,13 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
 000000 c04a                      	rjmp	MultiTask_Init		
                                  
                                  .org RTC_COMP_vect			; (16) RTC compare interrupt
-000010 c2a8                      	rjmp	ISR_RTC	
+000010 c2ae                      	rjmp	ISR_RTC	
                                  
                                  .org Porta_int_vect			; (60) External interrupt
-00003c c4bc                      	rjmp	ISR_PortA
+00003c c4d3                      	rjmp	ISR_PortA
                                  
                                  .org TCD5_OVF_vect			; (72) Timer D5 overflow interrupt
-000048 c414                      	rjmp	ISR_TCD5_OVF
+000048 c42b                      	rjmp	ISR_TCD5_OVF
                                  
                                  
                                  ;----------------------------------------------------
@@ -6287,8 +6287,8 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  ;----------------------------------------------------
                                  .cseg
                                  Multitask_task_table:	
-000049 0502                      	.dw		TaskMain	
-00004a 0437                      	.dw		TaskTimer			
+000049 0519                      	.dw		TaskMain	
+00004a 044e                      	.dw		TaskTimer			
                                  Multitask_task_table_end:
                                  
                                  .equ	multitask_TASKS_COUNT = (multitask_task_table_end-multitask_task_table)
@@ -6527,9 +6527,15 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
                                  ; Eeprom
                                  ;----------------------------------------------------
+                                 .equ EEdir_Time			= 0x1000
+                                 .equ EEdir_BatCritic	= 0x1002
+                                 .equ EEdir_Batmin		= 0x1003
+                                 .equ EEdir_Batmax		= 0x1004
+                                 
+                                 ;----------------------------------------------------
                                  Eeprom_ReadSamplingTime:
-000115 e1b0                      	ldi		xh,high(0x1000)
-000116 e0a0                      	ldi		xl,low(0x1000)
+000115 e1b0                      	ldi		xh,high(EEdir_Time)
+000116 e0a0                      	ldi		xl,low(EEdir_Time)
 000117 d00e                      	rcall	Eeprom_Read				
 000118 2f10                      	mov		r17,r16
 000119 d00c                      	rcall	Eeprom_Read
@@ -6541,8 +6547,8 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  Eeprom_WriteSamplingTime:
 00011d 2fca                      	mov		yl,xl
 00011e 2fdb                      	mov		yh,xh
-00011f e1b0                      	ldi		xh,high(0x1000)
-000120 e0a0                      	ldi		xl,low(0x1000)
+00011f e1b0                      	ldi		xh,high(EEdir_Time)
+000120 e0a0                      	ldi		xl,low(EEdir_Time)
 000121 2f0c                      	mov		r16,yl
 000122 d005                      	rcall	Eeprom_Write
 000123 2f0d                      	mov		r16,yh
@@ -6559,7 +6565,7 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  ;----------------------------------------------------
                                  ; Input:	(X) <-- r16
                                  Eeprom_Write:
-000128 e315                      	ldi		r17,0x035
+000128 e315                      	ldi		r17,0x35
 000129 9310 01ca                 	sts		nvm_cmd,r17
 00012b 2711                      	clr		r17
 00012c 930c                      	st		x,r16
@@ -6625,12 +6631,20 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
                                  .equ Lora_BandWidth			=	125000
                                  .equ Lora_SpreadFactor		=	12
-                                 .equ Lora_Frequency			=	915000000		
-                                 .equ Lora_SyncWord			=	0x12				
+                                 ;.equ Lora_Frequency			=	916800000		; Ch 0
+                                 ;.equ Lora_Frequency			=	917000000		; Ch 1
+                                 ;.equ Lora_Frequency			=	917200000		; Ch 2
+                                 .equ Lora_Frequency			=	917400000		; Ch 3
+                                 ;.equ Lora_Frequency			=	917600000		; Ch 4	
+                                 ;.equ Lora_Frequency			=	917800000		; Ch 5
+                                 ;.equ Lora_Frequency			=	918000000		; Ch 6
+                                 ;.equ Lora_Frequency			=	918200000		; Ch 7
+                                 
+                                 .equ Lora_SyncWord			=	0x34			
                                  .equ Lora_CodeRate			=	5
                                  .equ Lora_PreambleLength	=	8				
                                  .equ Lora_CRCEnable			=	1				; [0:1]
-                                 .equ Lora_TxPower			=	14				; [14:20] dBm
+                                 .equ Lora_TxPower			=	20				; [14:20] dBm
                                  
                                  ;----------------------------------------------------
                                  ; Lora Transmission
@@ -6638,10 +6652,10 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
                                  .cseg
                                  LoRa_Transmit:
-000167 d135                      	rcall	Lora_EnableHardware
+000167 d13b                      	rcall	Lora_EnableHardware
 000168 d0de                      	rcall	Lora_Config
 000169 d094                      	rcall	Lora_Tx
-00016a d149                      	rcall	Lora_DisableHardware
+00016a d14f                      	rcall	Lora_DisableHardware
 00016b 9508                      	ret
                                  
                                  ;----------------------------------------------------
@@ -6656,7 +6670,7 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  Lora_Reception:
 00016c e002
 00016d 9300 0605                 	TurnOnLed
-00016f d12d                      	rcall	Lora_EnableHardware						; Turn on HW and init low level HW
+00016f d133                      	rcall	Lora_EnableHardware						; Turn on HW and init low level HW
 000170 d0d6                      	rcall	Lora_Config								; Set Lora standard configuration
 000171 d083                      	rcall	Lora_RxSet								; Set Lora Reception configuration
 000172 e30c                      	ldi		r16,Lora_RxTimeout_s					; Set Lora Timeout
@@ -6667,14 +6681,14 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
 000179 3000                      	cpi		r16,0
 00017a f031                      	breq	Lora_Reception_End						; Evaluate timeout
 00017b e604                      	ldi		r16,100
-00017c d3a6                      	rcall	DelayMs									; Delay
+00017c d3bd                      	rcall	DelayMs									; Delay
 00017d d055                      	rcall	Lora_RxParsePacket						; There is a packet received?
 00017e f7b1                      	brne	Lora_Reception_Loop
 00017f d03a                      	rcall	Lora_RxRead								; Read bytes received
 000180 d005                      	rcall	Lora_RxProcess
                                  	
                                  Lora_Reception_End:
-000181 d132                      	rcall	Lora_DisableHardware					; Turn off HW and deinit low level HW
+000181 d138                      	rcall	Lora_DisableHardware					; Turn off HW and deinit low level HW
 000182 e002
 000183 9300 0606                 	TurnOffLed
 000185 9508                      	ret
@@ -6696,33 +6710,33 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
 000195 e002
 000196 9300 0606                 	TurnOffLed
 000198 ec08                      	ldi		r16,200
-000199 d389                      	rcall	DelayMs
+000199 d3a0                      	rcall	DelayMs
 00019a e002
 00019b 9300 0605                 	TurnOnLed
 00019d ec08                      	ldi		r16,200
-00019e d384                      	rcall	DelayMs
+00019e d39b                      	rcall	DelayMs
 00019f e002
 0001a0 9300 0606                 	TurnOffLed
 0001a2 ec08                      	ldi		r16,200
-0001a3 d37f                      	rcall	DelayMs
+0001a3 d396                      	rcall	DelayMs
 0001a4 e002
 0001a5 9300 0605                 	TurnOnLed
 0001a7 ec08                      	ldi		r16,200
-0001a8 d37a                      	rcall	DelayMs
+0001a8 d391                      	rcall	DelayMs
 0001a9 e002
 0001aa 9300 0606                 	TurnOffLed
 0001ac ec08                      	ldi		r16,200
-0001ad d375                      	rcall	DelayMs
+0001ad d38c                      	rcall	DelayMs
 0001ae e002
 0001af 9300 0605                 	TurnOnLed
 0001b1 ec08                      	ldi		r16,200
-0001b2 d370                      	rcall	DelayMs
+0001b2 d387                      	rcall	DelayMs
 0001b3 e002
 0001b4 9300 0606                 	TurnOffLed
                                  
 0001b6 df5e                      	rcall	Eeprom_ReadSamplingTime					; Read sampling time
-0001b7 d11a                      	rcall	Rtc_Config								; Configure timer to wake up from sleep
-0001b8 d31d                      	rcall	Button_Config							; Configure button to wake up from sleep
+0001b7 d120                      	rcall	Rtc_Config								; Configure timer to wake up from sleep
+0001b8 d334                      	rcall	Button_Config							; Configure button to wake up from sleep
                                  
                                  Lora_RxProcess_End:
 0001b9 9508                      	ret
@@ -6739,14 +6753,14 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  Lora_RxRead:
 0001ba e103                      	ldi		r16,REG_RX_NB_BYTES
 0001bb e010                      	ldi		r17,0
-0001bc d0d5                      	rcall	LOra_RReg
+0001bc d0db                      	rcall	LOra_RReg
 0001bd 9110 2107                 	lds		r17,Lora_RxIdx
 0001bf 1701                      	cp		r16,r17
 0001c0 f089                      	breq	Lora_RxRead_End
                                  
 0001c1 e000                      	ldi		r16,REG_FIFO
 0001c2 e010                      	ldi		r17,0
-0001c3 d0ce                      	rcall	LOra_RReg
+0001c3 d0d4                      	rcall	LOra_RReg
                                  
 0001c4 e0a9                      	ldi		xl,low(Lora_RxData)
 0001c5 e2b1                      	ldi		xh,high(Lora_RxData)
@@ -6767,12 +6781,12 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  Lora_RxParsePacket:
 0001d3 e102                      	ldi		r16,REG_IRQ_FLAGS					; Read IRQ Register
 0001d4 e010                      	ldi		r17,0
-0001d5 d0bc                      	rcall	Lora_RReg
+0001d5 d0c2                      	rcall	Lora_RReg
 0001d6 9300 2106                 	sts		Lora_RxIrq,r16
                                  
 0001d8 2f10                      	mov		r17,r16								; Clear IRQ Flags
 0001d9 e102                      	ldi		r16,Reg_Irq_Flags
-0001da d0ac                      	rcall	Lora_WReg
+0001da d0b2                      	rcall	Lora_WReg
                                  
 0001db 9100 2106                 	lds		r16,Lora_RxIrq						; If()
 0001dd 7600                      	andi	r16,0x60
@@ -6784,20 +6798,20 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
 0001e3 e103                      	ldi		r16,REG_RX_NB_BYTES					; Read packet length
 0001e4 e010                      	ldi		r17,0
-0001e5 d0ac                      	rcall	Lora_RReg
+0001e5 d0b2                      	rcall	Lora_RReg
 0001e6 9300 2108                 	sts		Lora_RxLen,r16
                                  	
                                  
 0001e8 e100                      	ldi		r16,REG_FIFO_RX_CURRENT_ADDR		; Set fifo Address to current Rx Address
 0001e9 e010                      	ldi		r17,0
-0001ea d0a7                      	rcall	Lora_RReg
+0001ea d0ad                      	rcall	Lora_RReg
 0001eb 2f10                      	mov		r17,r16
 0001ec e00d                      	ldi		r16,REG_FIFO_ADDR_PTR
-0001ed d099                      	rcall	Lora_WReg
+0001ed d09f                      	rcall	Lora_WReg
                                  
 0001ee e001                      	ldi		r16,REG_OP_MODE						; To idle
 0001ef e811                      	ldi		r17,Mode_Lora|Mode_standby
-0001f0 d096                      	rcall	Lora_WReg
+0001f0 d09c                      	rcall	Lora_WReg
                                  
 0001f1 9418                      	sez
 0001f2 c001                      	rjmp	Lora_Rx_End
@@ -6810,14 +6824,14 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  Lora_RxSet:
 0001f5 e400                      	ldi		r16,REG_DIO_MAPPING_1
 0001f6 e010                      	ldi		r17,0x00
-0001f7 d08f                      	rcall	Lora_WReg
+0001f7 d095                      	rcall	Lora_WReg
                                  
 0001f8 e001                      	ldi		r16,REG_OP_MODE
 0001f9 e815                      	ldi		r17,MODE_LORA | MODE_RX_CONTINUOUS
-0001fa d08c                      	rcall	Lora_WReg
+0001fa d092                      	rcall	Lora_WReg
                                  
 0001fb e604                      	ldi		r16,100
-0001fc d326                      	rcall	DelayMs
+0001fc d33d                      	rcall	DelayMs
 0001fd 9508                      	ret
                                  
                                  ;----------------------------------------------------
@@ -6825,206 +6839,214 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  ;	Begin Packet
 0001fe e001                      	ldi		r16,Reg_Op_Mode			
 0001ff e010                      	ldi		r17,0
-000200 d091                      	rcall	Lora_RReg				; Wait to finish any transmission
+000200 d097                      	rcall	Lora_RReg				; Wait to finish any transmission
 000201 7007                      	andi	r16,0x07
 000202 3003                      	cpi		r16,0x03
 000203 f3d1                      	breq	Lora_Tx
                                  
 000204 e102                      	ldi		r16,Reg_Irq_Flags
 000205 e018                      	ldi		r17,Irq_TxDone
-000206 d080                      	rcall	Lora_WReg
+000206 d086                      	rcall	Lora_WReg
                                  
 000207 e001                      	ldi		r16,Reg_Op_Mode			; Idle
 000208 e811                      	ldi		r17,Mode_LoRa|Mode_StandBy
-000209 d07d                      	rcall	Lora_WReg						
+000209 d083                      	rcall	Lora_WReg						
                                  
 00020a e00d                      	ldi		r16,Reg_Fifo_Addr_Ptr	; Clear Tx Fifo
 00020b e010                      	ldi		r17,0
-00020c d07a                      	rcall	Lora_WReg
+00020c d080                      	rcall	Lora_WReg
 00020d e202                      	ldi		r16,Reg_Payload_Length
 00020e e010                      	ldi		r17,0
-00020f d077                      	rcall	Lora_WReg
+00020f d07d                      	rcall	Lora_WReg
                                      
                                  ;	Write message	
 000210 e000                      	ldi		r16,Reg_Fifo
 000211 9110 2149                 	lds		r17,Serial_Number
-000213 d073                      	rcall	Lora_WReg
+000213 d079                      	rcall	Lora_WReg
 000214 e000                      	ldi		r16,Reg_Fifo
 000215 9110 214a                 	lds		r17,Thermocouple_Table
-000217 d06f                      	rcall	Lora_WReg
+000217 d075                      	rcall	Lora_WReg
 000218 e000                      	ldi		r16,Reg_Fifo
 000219 9110 214b                 	lds		r17,Thermocouple_Table+1
-00021b d06b                      	rcall	Lora_WReg
+00021b d071                      	rcall	Lora_WReg
 00021c e000                      	ldi		r16,Reg_Fifo
 00021d 9110 214c                 	lds		r17,Thermocouple_Table+2
-00021f d067                      	rcall	Lora_WReg
+00021f d06d                      	rcall	Lora_WReg
 000220 e000                      	ldi		r16,Reg_Fifo
 000221 9110 214d                 	lds		r17,Thermocouple_Table+3
-000223 d063                      	rcall	Lora_WReg
+000223 d069                      	rcall	Lora_WReg
 000224 e000                      	ldi		r16,Reg_Fifo
 000225 9110 214e                 	lds		r17,Thermocouple_Table+4
-000227 d05f                      	rcall	Lora_WReg
+000227 d065                      	rcall	Lora_WReg
 000228 e000                      	ldi		r16,Reg_Fifo
 000229 9110 214f                 	lds		r17,Thermocouple_Table+5
-00022b d05b                      	rcall	Lora_WReg
+00022b d061                      	rcall	Lora_WReg
 00022c e000                      	ldi		r16,Reg_Fifo
 00022d 9110 2150                 	lds		r17,Thermocouple_Table+6	
-00022f d057                      	rcall	Lora_WReg
+00022f d05d                      	rcall	Lora_WReg
 000230 e000                      	ldi		r16,Reg_Fifo
 000231 9110 2151                 	lds		r17,Thermocouple_Table+7
-000233 d053                      	rcall	Lora_WReg
+000233 d059                      	rcall	Lora_WReg
 000234 e000                      	ldi		r16,Reg_Fifo
 000235 9110 215a                 	lds		r17,Battery_Level
-000237 d04f                      	rcall	Lora_WReg
+000237 d055                      	rcall	Lora_WReg
                                  
 000238 e202                      	ldi		r16,Reg_payload_Length
 000239 e01a                      	ldi		r17,10
-00023a d04c                      	rcall	Lora_WReg
+00023a d052                      	rcall	Lora_WReg
                                  	
                                  ;	End packet
 00023b e001                      	ldi		r16,Reg_Op_Mode
 00023c e813                      	ldi		r17,Mode_Lora|Mode_Tx
-00023d d049                      	rcall	Lora_WReg	
+00023d d04f                      	rcall	Lora_WReg	
                                  Lora_tx_Loop:
 00023e e102                      	ldi		r16,Reg_Irq_Flags
 00023f e010                      	ldi		r17,0
-000240 d051                      	rcall	Lora_RReg
+000240 d057                      	rcall	Lora_RReg
 000241 ff03                      	sbrs	r16,3	
 000242 cffb                      	rjmp	Lora_tx_Loop
                                  	
 000243 e102                      	ldi		r16,Reg_Irq_Flags
 000244 e018                      	ldi		r17,Irq_TxDone
-000245 d041                      	rcall	Lora_WReg
+000245 d047                      	rcall	Lora_WReg
                                  		
 000246 9508                      	ret
                                  ;----------------------------------------------------
                                  Lora_Config:
 000247 e001                      	ldi		r16,Reg_op_mode					; Sleep
 000248 e810                      	ldi		r17,mode_LoRa|mode_sleep
-000249 d03d                      	rcall	Lora_WReg						
+000249 d043                      	rcall	Lora_WReg						
                                  	
 00024a e006                      	ldi		r16,Reg_frf_msb					; Set frequency
-00024b ee14                      	ldi		r17,(frf>>16) & 0xff
-00024c d03a                      	rcall	Lora_WReg
+00024b ee15                      	ldi		r17,(frf>>16) & 0xff
+00024c d040                      	rcall	Lora_WReg
 00024d e007                      	ldi		r16,Reg_frf_mid
-00024e ec10                      	ldi		r17,(frf>>8)  & 0xff
-00024f d037                      	rcall	Lora_WReg
+00024e e519                      	ldi		r17,(frf>>8)  & 0xff
+00024f d03d                      	rcall	Lora_WReg
 000250 e008                      	ldi		r16,Reg_frf_lsb
-000251 e010                      	ldi		r17,(frf>>0)  & 0xff
-000252 d034                      	rcall	Lora_WReg						
+000251 e919                      	ldi		r17,(frf>>0)  & 0xff
+000252 d03a                      	rcall	Lora_WReg						
                                  		
 000253 e00e                      	ldi		r16,Reg_fifo_tx_base_addr		; Set base address
 000254 e010                      	ldi		r17,0x00
-000255 d031                      	rcall	Lora_WReg
+000255 d037                      	rcall	Lora_WReg
 000256 e00f                      	ldi		r16,Reg_fifo_rx_base_addr
 000257 e010                      	ldi		r17,0x00
-000258 d02e                      	rcall	Lora_WReg
+000258 d034                      	rcall	Lora_WReg
                                  
 000259 e00c                      	ldi		r16,Reg_lna						; Set Lna configuration (Max Gain & Boost on)
 00025a e213                      	ldi		r17,0x23
-00025b d02b                      	rcall	Lora_Wreg
+00025b d031                      	rcall	Lora_Wreg
                                  
 00025c e206                      	ldi		r16,Reg_Modem_Config_3			; Agc Auto On
 00025d e014                      	ldi		r17,0x04
-00025e d028                      	rcall	Lora_Wreg
+00025e d02e                      	rcall	Lora_Wreg
                                  
 00025f e40d                      	ldi		r16,Reg_Pa_Dac					; Set dBm on Pa_Boost
-000260 e814                      	ldi		r17,dac
-000261 d025                      	rcall	Lora_WReg
+000260 e817                      	ldi		r17,dac
+000261 d02b                      	rcall	Lora_WReg
 000262 e00b                      	ldi		r16,Reg_Ocp						; OCP enable
-000263 e21b                      	ldi		r17,0x20|(0x1f&ocpTrim)
-000264 d022                      	rcall	Lora_WReg							
+000263 e31b                      	ldi		r17,0x20|(0x1f&ocpTrim)
+000264 d028                      	rcall	Lora_WReg							
 000265 e009                      	ldi		r16,Reg_Pa_Config				; PA_Boost
-000266 e81c                      	ldi		r17,0x80|level
-000267 d01f                      	rcall	Lora_WReg
+000266 e81f                      	ldi		r17,0x80|level
+000267 d025                      	rcall	Lora_WReg
                                  	
 000268 e001                      	ldi		r16,Reg_Op_Mode					; Idle
 000269 e811                      	ldi		r17,Mode_LoRa|Mode_StandBy
-00026a d01c                      	rcall	Lora_WReg
+00026a d022                      	rcall	Lora_WReg
                                  	
 00026b e309                      	ldi		r16,Reg_Sync_Word				; Set sync word
-00026c e112                      	ldi		r17,Lora_SyncWord
-00026d d019                      	rcall	Lora_WReg
+00026c e314                      	ldi		r17,Lora_SyncWord
+00026d d01f                      	rcall	Lora_WReg
                                  		
 00026e e301                      	ldi		r16,Reg_Detection_Optimize				
 00026f ec13                      	ldi		r17,DetectionOptimize
-000270 d016                      	rcall	Lora_WReg
+000270 d01c                      	rcall	Lora_WReg
 000271 e307                      	ldi		r16,Reg_Detection_Threshold				
 000272 e01a                      	ldi		r17,DetectionThreshold
-000273 d013                      	rcall	Lora_WReg
+000273 d019                      	rcall	Lora_WReg
 000274 e10e                      	ldi		r16,Reg_Modem_Config_2			; Set spreading factor & CRC enable	
 000275 9120 215b                 	lds		r18, Spread_Factor
 000277 e014                      	ldi		r17,(Lora_CRCEnable<<2)		
 000278 2b12                      	or		r17,r18
-000279 d00d                      	rcall	Lora_WReg
+000279 d013                      	rcall	Lora_WReg
+                                 
 00027a e206                      	ldi		r16,Reg_Modem_Config_3				
-00027b e01c                      	ldi		r17,Lora_LowDROptimize|0x04				
-00027c d00a                      	rcall	Lora_WReg
+00027b 9110 215b                 	lds		r17,Spread_Factor
+00027d 3b10                      	cpi		r17,0xb0
+00027e f010                      	brlo	LoRa_SetSF_low
+00027f e01c                      	ldi		r17,0x0c
+000280 c001                      	rjmp	LoRa_SetSF
+                                 LoRa_SetSF_low:
+000281 e014                      	ldi		r17,0x04
+                                 LoRa_SetSF:
+000282 d00a                      	rcall	Lora_WReg
                                  
-00027d e10d                      	ldi		r16,Reg_Modem_Config_1			; Set bandwidth & CodingRate & ImplicitMode
-00027e e712                      	ldi		r17,Lora_BW|Lora_CR|HeaderExplicit		
-00027f d007                      	rcall	Lora_WReg
+000283 e10d                      	ldi		r16,Reg_Modem_Config_1			; Set bandwidth & CodingRate & ImplicitMode
+000284 e712                      	ldi		r17,Lora_BW|Lora_CR|HeaderExplicit		
+000285 d007                      	rcall	Lora_WReg
                                  	
-000280 e200                      	ldi		r16,Reg_Preamble_Msb			; Preamble length
-000281 e010                      	ldi		r17,(Lora_PreambleLength>>8) & 0xff				
-000282 d004                      	rcall	Lora_WReg
-000283 e201                      	ldi		r16,Reg_Preamble_Lsb
-000284 e018                      	ldi		r17,(Lora_PreambleLength>>0) & 0xff				
-000285 d001                      	rcall	Lora_WReg
+000286 e200                      	ldi		r16,Reg_Preamble_Msb			; Preamble length
+000287 e010                      	ldi		r17,(Lora_PreambleLength>>8) & 0xff				
+000288 d004                      	rcall	Lora_WReg
+000289 e201                      	ldi		r16,Reg_Preamble_Lsb
+00028a e018                      	ldi		r17,(Lora_PreambleLength>>0) & 0xff				
+00028b d001                      	rcall	Lora_WReg
                                  
-000286 9508                      	ret
+00028c 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Lora_WReg:
-000287 e021                      	ldi		r18,0x01
-000288 9320 0646                 	sts		portc_outclr,r18		; CS Low
-00028a 6800                      	ori		r16,0x80		
-00028b debc                      	rcall	SpiL_Byte_TxRx			; Address
-00028c 2f01                      	mov		r16,r17
-00028d deba                      	rcall	SpiL_Byte_TxRx			; Data
-00028e e021                      	ldi		r18,0x01
-00028f 9320 0645                 	sts		portc_outSet,r18		; CS High
-000291 9508                      	ret
+00028d e021                      	ldi		r18,0x01
+00028e 9320 0646                 	sts		portc_outclr,r18		; CS Low
+000290 6800                      	ori		r16,0x80		
+000291 deb6                      	rcall	SpiL_Byte_TxRx			; Address
+000292 2f01                      	mov		r16,r17
+000293 deb4                      	rcall	SpiL_Byte_TxRx			; Data
+000294 e021                      	ldi		r18,0x01
+000295 9320 0645                 	sts		portc_outSet,r18		; CS High
+000297 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Lora_RReg:
-000292 e021                      	ldi		r18,0x01
-000293 9320 0646                 	sts		portc_outclr,r18		; CS Low
-000295 770f                      	andi	r16,0x7f
-000296 deb1                      	rcall	SpiL_Byte_TxRx			; Address
-000297 2f01                      	mov		r16,r17	
-000298 deaf                      	rcall	SpiL_Byte_TxRx			; Data
-000299 e021                      	ldi		r18,0x01
-00029a 9320 0645                 	sts		portc_outSet,r18		; CS High
-00029c 9508                      	ret
+000298 e021                      	ldi		r18,0x01
+000299 9320 0646                 	sts		portc_outclr,r18		; CS Low
+00029b 770f                      	andi	r16,0x7f
+00029c deab                      	rcall	SpiL_Byte_TxRx			; Address
+00029d 2f01                      	mov		r16,r17	
+00029e dea9                      	rcall	SpiL_Byte_TxRx			; Data
+00029f e021                      	ldi		r18,0x01
+0002a0 9320 0645                 	sts		portc_outSet,r18		; CS High
+0002a2 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Lora_EnableHardware:	
-00029d eb03                      	ldi		r16,0xb3				;PC7: MOSI		PC5: SCK		PC4:PWR		PC1: RST		PC0: CS		
-00029e 9300 0640                 	sts		portc_dir,r16			;PC2: DIO0		PC3: DIO0		PC6: MISO
-0002a0 e103                      	ldi		r16,0x13		
-0002a1 9300 0644                 	sts		portc_out,r16	
-0002a3 e000                      	ldi		r16,port_opc_totem_gc
-0002a4 9300 0656                 	sts		portc_pin6ctrl,r16
-0002a6 deaa                      	rcall	SpiL_Init				; Configure SPI	
-0002a7 e00a                      	ldi		r16,10
-0002a8 d27a                      	rcall	DelayMs					; Delay 10 ms
-0002a9 e002                      	ldi		r16,0x02
-0002aa 9300 0646                 	sts		portc_outclr,r16		; RST=Low
-0002ac e00a                      	ldi		r16,10
-0002ad d275                      	rcall	DelayMs					; Delay 10 ms
-0002ae e002                      	ldi		r16,0x02
-0002af 9300 0645                 	sts		portc_outset,r16		; RST=High
-0002b1 e00a                      	ldi		r16,10
-0002b2 d270                      	rcall	DelayMs					; Delay 10 ms
-0002b3 9508                      	ret
+0002a3 eb03                      	ldi		r16,0xb3				;PC7: MOSI		PC5: SCK		PC4:PWR		PC1: RST		PC0: CS		
+0002a4 9300 0640                 	sts		portc_dir,r16			;PC2: DIO0		PC3: DIO0		PC6: MISO
+0002a6 e103                      	ldi		r16,0x13		
+0002a7 9300 0644                 	sts		portc_out,r16	
+0002a9 e000                      	ldi		r16,port_opc_totem_gc
+0002aa 9300 0656                 	sts		portc_pin6ctrl,r16
+0002ac dea4                      	rcall	SpiL_Init				; Configure SPI	
+0002ad e00a                      	ldi		r16,10
+0002ae d28b                      	rcall	DelayMs					; Delay 10 ms
+0002af e002                      	ldi		r16,0x02
+0002b0 9300 0646                 	sts		portc_outclr,r16		; RST=Low
+0002b2 e00a                      	ldi		r16,10
+0002b3 d286                      	rcall	DelayMs					; Delay 10 ms
+0002b4 e002                      	ldi		r16,0x02
+0002b5 9300 0645                 	sts		portc_outset,r16		; RST=High
+0002b7 e00a                      	ldi		r16,10
+0002b8 d281                      	rcall	DelayMs					; Delay 10 ms
+0002b9 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Lora_DisableHardware:	
-0002b4 dea8                      	rcall	SpiL_DeInit
-0002b5 e100                      	ldi		r16,0x10
-0002b6 9300 0646                 	sts		portc_outclr,r16	
-0002b8 9508                      	ret
+0002ba dea2                      	rcall	SpiL_DeInit
+0002bb e100                      	ldi		r16,0x10
+0002bc 9300 0646                 	sts		portc_outclr,r16	
+0002be 9508                      	ret
                                  
                                  .include "LoraReg.asm"
                                  
@@ -7096,13 +7118,6 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  	.equ DetectionThreshold = 0x0a
                                  .endif
                                  
-                                 .equ Lora_SymbolDuration	=	10000/(Lora_BandWidth/(1<<Lora_SpreadFactor))
-                                 
-                                 .if Lora_SymbolDuration >16
-                                 	.equ Lora_LowDROptimize = 0x08
-                                 .else
-                                 .endif
-                                 
                                  .if Lora_BandWidth <= 7800
                                  .elif Lora_BandWidth <= 10400
                                  .elif Lora_BandWidth <= 15600
@@ -7123,10 +7138,10 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  .endif
                                  
                                  .if Lora_TxPower>17
+                                 	.equ level = Lora_TxPower-5
+                                 	.equ dac = 0x87
+                                 	.equ ocpTrim = 27
                                  .else	
-                                 	.equ level = Lora_TxPower-2
-                                 	.equ dac = 0x84
-                                 	.equ ocpTrim = 11
                                  .endif
                                  
                                  .include "Rtc.asm"
@@ -7139,82 +7154,82 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  .cseg
                                  ;----------------------------------------------------
                                  Isr_Rtc:
-0002b9 930f                      	push	r16
-0002ba e000                      	ldi		r16,0x00
-0002bb 9300 0402                 	sts		rtc_intctrl,r16			; Disable RTC interruptions
-0002bd e001                      	ldi		r16,0x01
+0002bf 930f                      	push	r16
+0002c0 e000                      	ldi		r16,0x00
+0002c1 9300 0402                 	sts		rtc_intctrl,r16			; Disable RTC interruptions
+0002c3 e001                      	ldi		r16,0x01
                                  	;sts		rtc_flag,r16			; Set user flag
-0002be 910f                      	pop		r16
-0002bf 9518                      	reti
+0002c4 910f                      	pop		r16
+0002c5 9518                      	reti
                                  
                                  ;----------------------------------------------------
                                  Rtc_Reset:
-0002c0 b70f                      	in		r16, cpu_sreg
-0002c1 930f                      	push	r16
-0002c2 94f8                      	cli	
-0002c3 d033                      	rcall	RTC_Busy
-0002c4 e000                      	ldi		r16,0x00
-0002c5 9300 0408                 	sts		rtc_cnt,r16
-0002c7 9300 0409                 	sts		rtc_cnt+1,r16			; Reset counter
-0002c9 e002                      	ldi		r16,0x02
-0002ca 9300 0403                 	sts		rtc_intflags,r16		; Cleart interruptions flags
-0002cc e00c                      	ldi		r16,0x0c
-0002cd 9300 0402                 	sts		rtc_intctrl,r16			; High level interrupt
+0002c6 b70f                      	in		r16, cpu_sreg
+0002c7 930f                      	push	r16
+0002c8 94f8                      	cli	
+0002c9 d033                      	rcall	RTC_Busy
+0002ca e000                      	ldi		r16,0x00
+0002cb 9300 0408                 	sts		rtc_cnt,r16
+0002cd 9300 0409                 	sts		rtc_cnt+1,r16			; Reset counter
+0002cf e002                      	ldi		r16,0x02
+0002d0 9300 0403                 	sts		rtc_intflags,r16		; Cleart interruptions flags
+0002d2 e00c                      	ldi		r16,0x0c
+0002d3 9300 0402                 	sts		rtc_intctrl,r16			; High level interrupt
                                  	;ldi		r16,0x00
                                  	;sts		rtc_flag,r16			; Clear user flag
-0002cf 910f                      	pop		r16
-0002d0 bf0f                      	out		cpu_sreg,r16
-0002d1 9508                      	ret
+0002d5 910f                      	pop		r16
+0002d6 bf0f                      	out		cpu_sreg,r16
+0002d7 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  .cseg
                                  Rtc_Config:
-0002d2 b70f                      	in		r16,cpu_sreg
-0002d3 930f                      	push	r16
-0002d4 94f8                      	cli	
+0002d8 b70f                      	in		r16,cpu_sreg
+0002d9 930f                      	push	r16
+0002da 94f8                      	cli	
                                  
-0002d5 e000                      	ldi		r16,0x00
-0002d6 9300 0402                 	sts		rtc_intctrl,r16			; Disable compare and overflow interrupt
+0002db e000                      	ldi		r16,0x00
+0002dc 9300 0402                 	sts		rtc_intctrl,r16			; Disable compare and overflow interrupt
                                  
-0002d8 e001                      	ldi		r16,(0x02<1)|0x01	
+0002de e001                      	ldi		r16,(0x02<1)|0x01	
                                  ;	ldi		r16,0x01	
-0002d9 9300 0043                 	sts		clk_rtcctrl,r16			; Enable clock for RTC | Selecting 1024 Hz from 32.768 kHz internal oscillator
+0002df 9300 0043                 	sts		clk_rtcctrl,r16			; Enable clock for RTC | Selecting 1024 Hz from 32.768 kHz internal oscillator
                                  	
-0002db d01b                      	rcall	Rtc_Busy
-0002dc e000                      	ldi		r16,0x00				
-0002dd 9300 0400                 	sts		rtc_ctrl,r16			; RTC stopped
+0002e1 d01b                      	rcall	Rtc_Busy
+0002e2 e000                      	ldi		r16,0x00				
+0002e3 9300 0400                 	sts		rtc_ctrl,r16			; RTC stopped
                                  
-0002df d017                      	rcall	Rtc_Busy
-0002e0 e000                      	ldi		r16,0x00
-0002e1 9300 0408                 	sts		rtc_cnt,r16
-0002e3 9300 0409                 	sts		rtc_cnt+1,r16			; Reset counter
+0002e5 d017                      	rcall	Rtc_Busy
+0002e6 e000                      	ldi		r16,0x00
+0002e7 9300 0408                 	sts		rtc_cnt,r16
+0002e9 9300 0409                 	sts		rtc_cnt+1,r16			; Reset counter
                                  
-0002e5 d011                      	rcall	Rtc_Busy
-0002e6 93a0 040c                 	sts		rtc_comp,xl
-0002e8 93b0 040d                 	sts		rtc_comp+1,xh			; Set compare value from X
+0002eb d011                      	rcall	Rtc_Busy
+0002ec 93a0 040c                 	sts		rtc_comp,xl
+0002ee 93b0 040d                 	sts		rtc_comp+1,xh			; Set compare value from X
                                  	
-0002ea d00c                      	rcall	rtc_busy
-0002eb e007                      	ldi		r16,0x07
-0002ec 9300 0400                 	sts		rtc_ctrl,r16			; Prescaler= 1024
+0002f0 d00c                      	rcall	rtc_busy
+0002f1 e007                      	ldi		r16,0x07
+0002f2 9300 0400                 	sts		rtc_ctrl,r16			; Prescaler= 1024
                                  
-0002ee e002                      	ldi		r16,0x02
-0002ef 9300 0403                 	sts		rtc_intflags,r16		; Clear compare flag
-0002f1 e00c                      	ldi		r16,0x0c	
-0002f2 9300 0402                 	sts		rtc_intctrl,r16			; High level interrupt Compare
+0002f4 e002                      	ldi		r16,0x02
+0002f5 9300 0403                 	sts		rtc_intflags,r16		; Clear compare flag
+0002f7 e00c                      	ldi		r16,0x0c	
+0002f8 9300 0402                 	sts		rtc_intctrl,r16			; High level interrupt Compare
                                  
-0002f4 910f                      	pop		r16
-0002f5 bf0f                      	out		cpu_sreg,r16
-0002f6 9508                      	ret
+0002fa 910f                      	pop		r16
+0002fb bf0f                      	out		cpu_sreg,r16
+0002fc 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Rtc_Busy:
-0002f7 930f                      	push	r16
+0002fd 930f                      	push	r16
                                  Rtc_Busy_Loop:
-0002f8 9100 0401                 	lds		r16,rtc_status
-0002fa fd00                      	sbrc	r16,0
-0002fb cffc                      	rjmp	Rtc_Busy_Loop
-0002fc 910f                      	pop		r16
-0002fd 9508                      	ret
+0002fe 9100 0401                 	lds		r16,rtc_status
+000300 fd00                      	sbrc	r16,0
+000301 cffc                      	rjmp	Rtc_Busy_Loop
+000302 910f                      	pop		r16
+000303 9508                      	ret
                                  .include "Sensors.asm"
                                  
                                  ; Sensors reading
@@ -7231,117 +7246,117 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
                                  .cseg
                                  Sensors_read:
-0002fe d0ff                      	rcall	SerialNumber_Read
-0002ff d003                      	rcall	Thermocouples_Read
-000300 d092                      	rcall	InternalTemperature_Check
-000301 d0cd                      	rcall	Battery_Read
-000302 9508                      	ret
+000304 d110                      	rcall	SerialNumber_Read
+000305 d003                      	rcall	Thermocouples_Read
+000306 d092                      	rcall	InternalTemperature_Check
+000307 d0cd                      	rcall	Battery_Read
+000308 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  ; Thermocouples reading
                                  ;----------------------------------------------------
                                  .cseg
                                  Thermocouples_Read: 	
-000303 d065                      	rcall	Thermocouples_Read_Enable				; Enable power supply and I/O pins for acquisition
-000304 ed0c                      	ldi		r16,220									; Thermocouple conversion power-up time (Min: 200 ms)
-000305 d21d                      	rcall	DelayMs									
+000309 d065                      	rcall	Thermocouples_Read_Enable				; Enable power supply and I/O pins for acquisition
+00030a ed0c                      	ldi		r16,220									; Thermocouple conversion power-up time (Min: 200 ms)
+00030b d22e                      	rcall	DelayMs									
                                  	
                                  ;	Discard first reading
-000306 e100                      	ldi		r16,0x10								; Reading thermocouple 1	
-000307 9300 0666                 	sts		portd_outclr,r16
-000309 d072                      	rcall	Thermocouple_read						
-00030a e100                      	ldi		r16,0x10
-00030b 9300 0665                 	sts		portd_outset,r16
+00030c e100                      	ldi		r16,0x10								; Reading thermocouple 1	
+00030d 9300 0666                 	sts		portd_outclr,r16
+00030f d072                      	rcall	Thermocouple_read						
+000310 e100                      	ldi		r16,0x10
+000311 9300 0665                 	sts		portd_outset,r16
                                  
-00030d e200                      	ldi		r16,0x20								; Reading thermocouple 2	
-00030e 9300 0666                 	sts		portd_outclr,r16
-000310 d06b                      	rcall	Thermocouple_read						
-000311 e200                      	ldi		r16,0x20
-000312 9300 0665                 	sts		portd_outset,r16
+000313 e200                      	ldi		r16,0x20								; Reading thermocouple 2	
+000314 9300 0666                 	sts		portd_outclr,r16
+000316 d06b                      	rcall	Thermocouple_read						
+000317 e200                      	ldi		r16,0x20
+000318 9300 0665                 	sts		portd_outset,r16
                                  
-000314 e400                      	ldi		r16,0x40								; Reading thermocouple 3
-000315 9300 0666                 	sts		portd_outclr,r16
-000317 d064                      	rcall	Thermocouple_read						
-000318 e400                      	ldi		r16,0x40
-000319 9300 0665                 	sts		portd_outset,r16
+00031a e400                      	ldi		r16,0x40								; Reading thermocouple 3
+00031b 9300 0666                 	sts		portd_outclr,r16
+00031d d064                      	rcall	Thermocouple_read						
+00031e e400                      	ldi		r16,0x40
+00031f 9300 0665                 	sts		portd_outset,r16
                                  
-00031b e002                      	ldi		r16,0x02								; Reading thermocouple 4	
-00031c 9300 07e6                 	sts		portr_outclr,r16
-00031e d05d                      	rcall	Thermocouple_read						
-00031f e002                      	ldi		r16,0x02
-000320 9300 07e5                 	sts		portr_outset,r16
+000321 e002                      	ldi		r16,0x02								; Reading thermocouple 4	
+000322 9300 07e6                 	sts		portr_outclr,r16
+000324 d05d                      	rcall	Thermocouple_read						
+000325 e002                      	ldi		r16,0x02
+000326 9300 07e5                 	sts		portr_outset,r16
                                  
-000322 e604                      	ldi		r16,100									; Thermocouple conversion (Min: 100 ms)
-000323 d1ff                      	rcall	DelayMs									
+000328 e604                      	ldi		r16,100									; Thermocouple conversion (Min: 100 ms)
+000329 d210                      	rcall	DelayMs									
                                  
                                  ;	Valid reading
-000324 e100                      	ldi		r16,0x10								; Reading temperature of thermocouple 1	
-000325 9300 0666                 	sts		portd_outclr,r16
-000327 d054                      	rcall	Thermocouple_read						
-000328 e100                      	ldi		r16,0x10
-000329 9300 0665                 	sts		portd_outset,r16
-00032b 93d0 214a                 	sts		Thermocouple_Table,yh
-00032d 93c0 214b                 	sts		Thermocouple_Table+1,yl
-00032f 93b0 2152                 	sts		InternalTemp_Table,xh
-000331 93a0 2153                 	sts		InternalTemp_Table+1,xl					
+00032a e100                      	ldi		r16,0x10								; Reading temperature of thermocouple 1	
+00032b 9300 0666                 	sts		portd_outclr,r16
+00032d d054                      	rcall	Thermocouple_read						
+00032e e100                      	ldi		r16,0x10
+00032f 9300 0665                 	sts		portd_outset,r16
+000331 93d0 214a                 	sts		Thermocouple_Table,yh
+000333 93c0 214b                 	sts		Thermocouple_Table+1,yl
+000335 93b0 2152                 	sts		InternalTemp_Table,xh
+000337 93a0 2153                 	sts		InternalTemp_Table+1,xl					
                                  
-000333 e200                      	ldi		r16,0x20								; Reading temperature of thermocouple 2
-000334 9300 0666                 	sts		portd_outclr,r16
-000336 d045                      	rcall	Thermocouple_read							
-000337 e200                      	ldi		r16,0x20
-000338 9300 0665                 	sts		portd_outset,r16
-00033a 93d0 214c                 	sts		Thermocouple_Table+2,yh
-00033c 93c0 214d                 	sts		Thermocouple_Table+3,yl
-00033e 93b0 2154                 	sts		InternalTemp_Table+2,xh
-000340 93a0 2155                 	sts		InternalTemp_Table+3,xl					
+000339 e200                      	ldi		r16,0x20								; Reading temperature of thermocouple 2
+00033a 9300 0666                 	sts		portd_outclr,r16
+00033c d045                      	rcall	Thermocouple_read							
+00033d e200                      	ldi		r16,0x20
+00033e 9300 0665                 	sts		portd_outset,r16
+000340 93d0 214c                 	sts		Thermocouple_Table+2,yh
+000342 93c0 214d                 	sts		Thermocouple_Table+3,yl
+000344 93b0 2154                 	sts		InternalTemp_Table+2,xh
+000346 93a0 2155                 	sts		InternalTemp_Table+3,xl					
                                  
-000342 e400                      	ldi		r16,0x40								; Reading temperature of thermocouple 3
-000343 9300 0666                 	sts		portd_outclr,r16
-000345 d036                      	rcall	Thermocouple_read						
-000346 e400                      	ldi		r16,0x40
-000347 9300 0665                 	sts		portd_outset,r16
-000349 93d0 214e                 	sts		Thermocouple_Table+4,yh
-00034b 93c0 214f                 	sts		Thermocouple_Table+5,yl
-00034d 93b0 2156                 	sts		InternalTemp_Table+4,xh
-00034f 93a0 2157                 	sts		InternalTemp_Table+5,xl					
+000348 e400                      	ldi		r16,0x40								; Reading temperature of thermocouple 3
+000349 9300 0666                 	sts		portd_outclr,r16
+00034b d036                      	rcall	Thermocouple_read						
+00034c e400                      	ldi		r16,0x40
+00034d 9300 0665                 	sts		portd_outset,r16
+00034f 93d0 214e                 	sts		Thermocouple_Table+4,yh
+000351 93c0 214f                 	sts		Thermocouple_Table+5,yl
+000353 93b0 2156                 	sts		InternalTemp_Table+4,xh
+000355 93a0 2157                 	sts		InternalTemp_Table+5,xl					
                                  
                                  
-000351 e002                      	ldi		r16,0x02								; Reading temperature of thermocouple 4
-000352 9300 07e6                 	sts		portr_outclr,r16
-000354 d027                      	rcall	Thermocouple_read						
-000355 e002                      	ldi		r16,0x02
-000356 9300 07e5                 	sts		portr_outset,r16
-000358 93d0 2150                 	sts		Thermocouple_Table+6,yh
-00035a 93c0 2151                 	sts		Thermocouple_Table+7,yl
-00035c 93b0 2158                 	sts		InternalTemp_Table+6,xh
-00035e 93a0 2159                 	sts		InternalTemp_Table+7,xl					
+000357 e002                      	ldi		r16,0x02								; Reading temperature of thermocouple 4
+000358 9300 07e6                 	sts		portr_outclr,r16
+00035a d027                      	rcall	Thermocouple_read						
+00035b e002                      	ldi		r16,0x02
+00035c 9300 07e5                 	sts		portr_outset,r16
+00035e 93d0 2150                 	sts		Thermocouple_Table+6,yh
+000360 93c0 2151                 	sts		Thermocouple_Table+7,yl
+000362 93b0 2158                 	sts		InternalTemp_Table+6,xh
+000364 93a0 2159                 	sts		InternalTemp_Table+7,xl					
                                  
-000360 d001                      	rcall	Thermocouples_Read_Disable
-000361 9508                      	ret
+000366 d001                      	rcall	Thermocouples_Read_Disable
+000367 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Thermocouples_Read_Disable:			
-000362 e003                      	ldi		r16,0x03
-000363 9300 07e6                 	sts		portr_outclr,r16						; Set low SS3 and SCK
-000365 e704                      	ldi		r16,0x74
-000366 9300 0666                 	sts		portd_outclr,r16						; Disable power supply for thermocouples and set low CS0,CS1,CS2
-000368 9508                      	ret
+000368 e003                      	ldi		r16,0x03
+000369 9300 07e6                 	sts		portr_outclr,r16						; Set low SS3 and SCK
+00036b e704                      	ldi		r16,0x74
+00036c 9300 0666                 	sts		portd_outclr,r16						; Disable power supply for thermocouples and set low CS0,CS1,CS2
+00036e 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Thermocouples_Read_Enable:
-000369 e704                      	ldi		r16,0x74
-00036a 9300 0661                 	sts		portd_dirset,r16			
-00036c e704                      	ldi		r16,0x74
-00036d 9300 0665                 	sts		portd_outset,r16						; Enable power supply for thermocouples, CS0,CS1,CS2
-00036f e003                      	ldi		r16,0x03
-000370 9300 07e1                 	sts		portr_dirset,r16
-000372 e002                      	ldi		r16,0x02
-000373 9300 07e5                 	sts		portr_outset,r16						; Enable SS3 and SCK
-000375 e800                      	ldi		r16,0x80
-000376 9300 0662                 	sts		portd_dirclr,r16
-000378 e000                      	ldi		r16,PORT_OPC_TOTEM_gc
-000379 9300 0677                 	sts		portd_pin7ctrl,r16						; High-Z: MISO		
-00037b 9508                      	ret
+00036f e704                      	ldi		r16,0x74
+000370 9300 0661                 	sts		portd_dirset,r16			
+000372 e704                      	ldi		r16,0x74
+000373 9300 0665                 	sts		portd_outset,r16						; Enable power supply for thermocouples, CS0,CS1,CS2
+000375 e003                      	ldi		r16,0x03
+000376 9300 07e1                 	sts		portr_dirset,r16
+000378 e002                      	ldi		r16,0x02
+000379 9300 07e5                 	sts		portr_outset,r16						; Enable SS3 and SCK
+00037b e800                      	ldi		r16,0x80
+00037c 9300 0662                 	sts		portd_dirclr,r16
+00037e e000                      	ldi		r16,PORT_OPC_TOTEM_gc
+00037f 9300 0677                 	sts		portd_pin7ctrl,r16						; High-Z: MISO		
+000381 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  ; Read thermocouple and internal temperature from IC
@@ -7351,15 +7366,15 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
                                  .cseg
                                  Thermocouple_read:
-00037c d008                      	rcall	Spi_Thermocouple_Byte_Rx
-00037d 2fd0                      	mov		yh,r16
-00037e d006                      	rcall	Spi_Thermocouple_Byte_Rx
-00037f 2fc0                      	mov		yl,r16
-000380 d004                      	rcall	Spi_Thermocouple_Byte_Rx
-000381 2fb0                      	mov		xh,r16
-000382 d002                      	rcall	Spi_Thermocouple_Byte_Rx
-000383 2fa0                      	mov		xl,r16		
-000384 9508                      	ret
+000382 d008                      	rcall	Spi_Thermocouple_Byte_Rx
+000383 2fd0                      	mov		yh,r16
+000384 d006                      	rcall	Spi_Thermocouple_Byte_Rx
+000385 2fc0                      	mov		yl,r16
+000386 d004                      	rcall	Spi_Thermocouple_Byte_Rx
+000387 2fb0                      	mov		xh,r16
+000388 d002                      	rcall	Spi_Thermocouple_Byte_Rx
+000389 2fa0                      	mov		xl,r16		
+00038a 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  ; Spi simulated
@@ -7367,199 +7382,216 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  ; Output: r16
                                  
                                  Spi_Thermocouple_Byte_Rx:
-000385 e001                      	ldi		r16,0x01								; Data byte
+00038b e001                      	ldi		r16,0x01								; Data byte
                                  Spi_Thermocouple_Byte_Rx_Loop:
-000386 e011                      	ldi		r17,0x01
-000387 9310 07e5                 	sts		portr_outset,r17						; Sck High
-000389 0f00                      	lsl		r16										; Rotate left
-00038a 9120 0668                 	lds		r18,portd_in							; Read Miso bit
-00038c fd27                      	sbrc	r18,7									
-00038d 6001                      	ori		r16,0x01					
-00038e e011                      	ldi		r17,0x01								; Sckl Low
-00038f 9310 07e6                 	sts		portr_outclr,r17
-000391 f7a0                      	brcc	Spi_Thermocouple_Byte_Rx_Loop			; Repeated for eigth bits 
-000392 9508                      	ret
+00038c e011                      	ldi		r17,0x01
+00038d 9310 07e5                 	sts		portr_outset,r17						; Sck High
+00038f 0f00                      	lsl		r16										; Rotate left
+000390 9120 0668                 	lds		r18,portd_in							; Read Miso bit
+000392 fd27                      	sbrc	r18,7									
+000393 6001                      	ori		r16,0x01					
+000394 e011                      	ldi		r17,0x01								; Sckl Low
+000395 9310 07e6                 	sts		portr_outclr,r17
+000397 f7a0                      	brcc	Spi_Thermocouple_Byte_Rx_Loop			; Repeated for eigth bits 
+000398 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  InternalTemperature_Check:
-000393 e0d3                      	ldi		yh,high(InternalTemperatureMax)
-000394 e7d0                      	ldi		yh,low(InternalTemperatureMax)	
+000399 e0d3                      	ldi		yh,high(InternalTemperatureMax)
+00039a e7d0                      	ldi		yh,low(InternalTemperatureMax)	
                                  InternalTemperature_Check_FirstThemocouple:
-000395 91b0 2152                 	lds		xh,InternalTemp_Table
-000397 91a0 2153                 	lds		xl,InternalTemp_Table+1
-000399 d02c                      	rcall	Thermocouples_Compare
-00039a f431                      	brne	InternalTemperature_Check_SecondThemocouple
-00039b 91a0 214b                 	lds		xl,Thermocouple_Table+1
-00039d e002                      	ldi		r16,0x02
-00039e 2ba0                      	or		xl,r16
-00039f 93a0 214b                 	sts		Thermocouple_Table+1,xl
+00039b 91b0 2152                 	lds		xh,InternalTemp_Table
+00039d 91a0 2153                 	lds		xl,InternalTemp_Table+1
+00039f d02c                      	rcall	Thermocouples_Compare
+0003a0 f431                      	brne	InternalTemperature_Check_SecondThemocouple
+0003a1 91a0 214b                 	lds		xl,Thermocouple_Table+1
+0003a3 e002                      	ldi		r16,0x02
+0003a4 2ba0                      	or		xl,r16
+0003a5 93a0 214b                 	sts		Thermocouple_Table+1,xl
                                  InternalTemperature_Check_SecondThemocouple:
-0003a1 91b0 2154                 	lds		xh,InternalTemp_Table+2
-0003a3 91a0 2155                 	lds		xl,InternalTemp_Table+3
-0003a5 d020                      	rcall	Thermocouples_Compare
-0003a6 f431                      	brne	InternalTemperature_Check_ThirdThemocouple
-0003a7 91a0 214d                 	lds		xl,Thermocouple_Table+3
-0003a9 e002                      	ldi		r16,0x02
-0003aa 2ba0                      	or		xl,r16
-0003ab 93a0 214d                 	sts		Thermocouple_Table+3,xl
+0003a7 91b0 2154                 	lds		xh,InternalTemp_Table+2
+0003a9 91a0 2155                 	lds		xl,InternalTemp_Table+3
+0003ab d020                      	rcall	Thermocouples_Compare
+0003ac f431                      	brne	InternalTemperature_Check_ThirdThemocouple
+0003ad 91a0 214d                 	lds		xl,Thermocouple_Table+3
+0003af e002                      	ldi		r16,0x02
+0003b0 2ba0                      	or		xl,r16
+0003b1 93a0 214d                 	sts		Thermocouple_Table+3,xl
                                  InternalTemperature_Check_ThirdThemocouple:
-0003ad 91b0 2156                 	lds		xh,InternalTemp_Table+4
-0003af 91a0 2157                 	lds		xl,InternalTemp_Table+5
-0003b1 d014                      	rcall	Thermocouples_Compare
-0003b2 f431                      	brne	InternalTemperature_Check_FourthThemocouple
-0003b3 91a0 214f                 	lds		xl,Thermocouple_Table+5
-0003b5 e002                      	ldi		r16,0x02
-0003b6 2ba0                      	or		xl,r16
-0003b7 93a0 214f                 	sts		Thermocouple_Table+5,xl
+0003b3 91b0 2156                 	lds		xh,InternalTemp_Table+4
+0003b5 91a0 2157                 	lds		xl,InternalTemp_Table+5
+0003b7 d014                      	rcall	Thermocouples_Compare
+0003b8 f431                      	brne	InternalTemperature_Check_FourthThemocouple
+0003b9 91a0 214f                 	lds		xl,Thermocouple_Table+5
+0003bb e002                      	ldi		r16,0x02
+0003bc 2ba0                      	or		xl,r16
+0003bd 93a0 214f                 	sts		Thermocouple_Table+5,xl
                                  InternalTemperature_Check_FourthThemocouple:
-0003b9 91b0 2158                 	lds		xh,InternalTemp_Table+6
-0003bb 91a0 2159                 	lds		xl,InternalTemp_Table+7
-0003bd d008                      	rcall	Thermocouples_Compare
-0003be f431                      	brne	InternalTemperature_Check_End
-0003bf 91a0 2151                 	lds		xl,Thermocouple_Table+7
-0003c1 e002                      	ldi		r16,0x02
-0003c2 2ba0                      	or		xl,r16
-0003c3 93a0 2151                 	sts		Thermocouple_Table+7,xl
+0003bf 91b0 2158                 	lds		xh,InternalTemp_Table+6
+0003c1 91a0 2159                 	lds		xl,InternalTemp_Table+7
+0003c3 d008                      	rcall	Thermocouples_Compare
+0003c4 f431                      	brne	InternalTemperature_Check_End
+0003c5 91a0 2151                 	lds		xl,Thermocouple_Table+7
+0003c7 e002                      	ldi		r16,0x02
+0003c8 2ba0                      	or		xl,r16
+0003c9 93a0 2151                 	sts		Thermocouple_Table+7,xl
                                  InternalTemperature_Check_End:
-0003c5 9508                      	ret
+0003cb 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Thermocouples_Compare:
-0003c6 ef00                      	ldi		r16,0xf0
-0003c7 23a0                      	and		xl,r16
-0003c8 17ac                      	cp		xl,yl
-0003c9 07bd                      	cpc		xh,yh
-0003ca f410                      	brsh	Thermocouples_Compare_Higher
-0003cb 9498                      	clz
-0003cc c001                      	rjmp	Thermocouples_Compare_End
+0003cc ef00                      	ldi		r16,0xf0
+0003cd 23a0                      	and		xl,r16
+0003ce 17ac                      	cp		xl,yl
+0003cf 07bd                      	cpc		xh,yh
+0003d0 f410                      	brsh	Thermocouples_Compare_Higher
+0003d1 9498                      	clz
+0003d2 c001                      	rjmp	Thermocouples_Compare_End
                                  Thermocouples_Compare_Higher:
-0003cd 9418                      	sez
+0003d3 9418                      	sez
                                  Thermocouples_Compare_End:
-0003ce 9508                      	ret
+0003d4 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  ; Battery reading
                                  ;----------------------------------------------------
-                                 .if Node==0
-                                 .else
-                                 	.equ Battery_Low = 0xc1
-                                 .endif
+                                 
+                                 .dseg 
+00215c                           Battery:	.byte 1
                                  
                                  .cseg
                                   Battery_Read:	
-0003cf e008                      	ldi		r16,0x08
-0003d0 9300 0605                 	sts		porta_outset,r16						; Enable power for battery measurement
-0003d2 e010                      	ldi		r17,ADC_REFSEL_INT1V_gc 
-0003d3 e028                      	ldi		r18,ADC_SAMPNUM_256X_gc
-0003d4 dd25                      	rcall	Adc_On									; Configure Adc
-0003d5 e003                      	ldi		r16,3
-0003d6 d14c                      	rcall	DelayMs									; Delay for stable signal
-0003d7 e100                      	ldi		r16, ADC_CH_MUXPOS_PIN2_gc
-0003d8 dd0a                      	rcall	Adc_Read								; Read battery
-0003d9 0f11                      	lsl		r17
-0003da 1f00                      	rol		r16
-0003db 9300 215a                 	sts		Battery_Level,r16
-0003dd e008                      	ldi		r16,0x08
-0003de 9300 0606                 	sts		porta_outclr,r16						; Disable power for battery measurement
-0003e0 dd30                      	rcall	Adc_Off									; Turn off Adc
-0003e1 9100 215a                 	lds		r16,Battery_Level
-0003e3 9508                      	ret		
+0003d5 e008                      	ldi		r16,0x08
+0003d6 9300 0605                 	sts		porta_outset,r16						; Enable power for battery measurement
+0003d8 e010                      	ldi		r17,ADC_REFSEL_INT1V_gc 
+0003d9 e028                      	ldi		r18,ADC_SAMPNUM_256X_gc
+0003da dd1f                      	rcall	Adc_On									; Configure Adc
+0003db e003                      	ldi		r16,3
+0003dc d15d                      	rcall	DelayMs									; Delay for stable signal
+0003dd e100                      	ldi		r16, ADC_CH_MUXPOS_PIN2_gc
+0003de dd04                      	rcall	Adc_Read								; Read battery
+0003df 0f11                      	lsl		r17
+0003e0 1f00                      	rol		r16
+0003e1 2f10                      	mov		r17,r16
+0003e2 9310 215c                 	sts		Battery,r17
+0003e4 e0a3                      	ldi		xl,low(EEdir_Batmin)
+0003e5 e1b0                      	ldi		xh,high(EEdir_Batmin)
+0003e6 910c                      	ld		r16,x
+0003e7 1b10                      	sub		r17,r16
+0003e8 fd17                      	sbrc	r17,7
+0003e9 c003                      	rjmp	Battery_Read_Neg
+0003ea 0f11                      	lsl		r17
+0003eb 0f11                      	lsl		r17
+0003ec c001                      	rjmp	Battery_read_ENd
+                                 Battery_Read_Neg:
+0003ed 2711                      	clr		r17
+                                 Battery_read_ENd:
+0003ee 9310 215a                 	sts		Battery_level,r17
+0003f0 e008                      	ldi		r16,0x08
+0003f1 9300 0606                 	sts		porta_outclr,r16						; Disable power for battery measurement
+0003f3 dd1d                      	rcall	Adc_Off									; Turn off Adc
+0003f4 9100 215c                 	lds		r16,Battery
+0003f6 9508                      	ret		
                                  
                                  ;----------------------------------------------------
                                  Battery_CheckIfCritical:
-0003e4 3c01                      	cpi		r16,Battery_Low
-0003e5 f4b8                      	brsh	Battery_CheckIfCritical_End
-0003e6 e002                      	ldi		r16,0x02
-0003e7 9300 0605                 	sts		porta_outset,r16						; Led High
-0003e9 e302                      	ldi		r16,50
-0003ea d138                      	rcall	DelayMs									; 50 ms
-0003eb e002                      	ldi		r16,0x02
-0003ec 9300 0606                 	sts		porta_outclr,r16						; Led Low
-0003ee e604                      	ldi		r16,100
-0003ef d133                      	rcall	DelayMs									; 50 ms
-0003f0 e002                      	ldi		r16,0x02
-0003f1 9300 0605                 	sts		porta_outset,r16						; Led High
-0003f3 e302                      	ldi		r16,50
-0003f4 d12e                      	rcall	DelayMs									; 50 ms
-0003f5 e002                      	ldi		r16,0x02
-0003f6 9300 0606                 	sts		porta_outclr,r16						; Led Low
+0003f7 2f10                      	mov		r17,r16
+0003f8 e1b0                      	ldi		xh,high(EEdir_BatCritic)
+0003f9 e0a2                      	ldi		xl,low(EEdir_BatCritic)
+0003fa 910c                      	ld		r16,x	
+0003fb 1710                      	cp		r17,r16
+0003fc f4b8                      	brsh	Battery_CheckIfCritical_End
+0003fd e002                      	ldi		r16,0x02
+0003fe 9300 0605                 	sts		porta_outset,r16						; Led High
+000400 e302                      	ldi		r16,50
+000401 d138                      	rcall	DelayMs									; 50 ms
+000402 e002                      	ldi		r16,0x02
+000403 9300 0606                 	sts		porta_outclr,r16						; Led Low
+000405 e604                      	ldi		r16,100
+000406 d133                      	rcall	DelayMs									; 50 ms
+000407 e002                      	ldi		r16,0x02
+000408 9300 0605                 	sts		porta_outset,r16						; Led High
+00040a e302                      	ldi		r16,50
+00040b d12e                      	rcall	DelayMs									; 50 ms
+00040c e002                      	ldi		r16,0x02
+00040d 9300 0606                 	sts		porta_outclr,r16						; Led Low
                                  
-0003f8 e200                      	ldi		r16,0x20
-0003f9 9300 0606                 	sts		porta_outclr,r16						; Disable Locking
+00040f e200                      	ldi		r16,0x20
+000410 9300 0606                 	sts		porta_outclr,r16						; Disable Locking
                                  Battery_CheckIfCritical_Loop:
-0003fb 0000                      	nop
-0003fc cffe                      	rjmp	Battery_CheckIfCritical_Loop
+000412 0000                      	nop
+000413 cffe                      	rjmp	Battery_CheckIfCritical_Loop
                                  Battery_CheckIfCritical_End:
-0003fd 9508                      	ret
+000414 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  ; Serial number reading
                                  ;----------------------------------------------------
                                  .dseg
-00215c                           Temporal:		.byte 2
+00215d                           Temporal:		.byte 2
                                  
                                  .cseg
                                  SerialNumber_Read:	
-0003fe e800                      	ldi		r16,0x80
-0003ff 9300 0605                 	sts		porta_outset,r16
-000401 e110                      	ldi		r17,ADC_REFSEL_INTVCC_gc
-000402 e029                      	ldi		r18,ADC_SAMPNUM_512X_gc
-000403 dcf6                      	rcall	Adc_on
-000404 e003                      	ldi		r16,3
-000405 d11d                      	rcall	DelayMs	
+000415 e800                      	ldi		r16,0x80
+000416 9300 0605                 	sts		porta_outset,r16
+000418 e110                      	ldi		r17,ADC_REFSEL_INTVCC_gc
+000419 e029                      	ldi		r18,ADC_SAMPNUM_512X_gc
+00041a dcdf                      	rcall	Adc_on
+00041b e003                      	ldi		r16,3
+00041c d11d                      	rcall	DelayMs	
                                  
-000406 e400                      	ldi		r16, ADC_CH_MUXPOS_PIN8_gc
-000407 dcdb                      	rcall	Adc_Read	
-000408 9300 215c                 	sts		Temporal,r16
+00041d e400                      	ldi		r16, ADC_CH_MUXPOS_PIN8_gc
+00041e dcc4                      	rcall	Adc_Read	
+00041f 9300 215d                 	sts		Temporal,r16
                                  		
-00040a e408                      	ldi		r16, ADC_CH_MUXPOS_PIN9_gc
-00040b dcd7                      	rcall	Adc_Read	
-00040c 9300 215d                 	sts		Temporal+1,r16
+000421 e408                      	ldi		r16, ADC_CH_MUXPOS_PIN9_gc
+000422 dcc0                      	rcall	Adc_Read	
+000423 9300 215e                 	sts		Temporal+1,r16
                                  	
-00040e 9100 215c                 	lds		r16,Temporal
-000410 d01c                      	rcall	SerialNumber_Calculate
-000411 930f                      	push	r16
-000412 9100 215d                 	lds		r16,Temporal+1
-000414 d018                      	rcall	SerialNumber_Calculate
-000415 2f10                      	mov		r17,r16								; High value
-000416 910f                      	pop		r16									; Low value
-000417 701f                      	andi	r17,0x0f
-000418 9512                      	swap	r17
-000419 2b01                      	or		r16,r17								; Serial number readed
-00041a 2f10                      	mov		r17,r16								; Save value
-00041b 710f                      	andi	r16,0x1f							; Mask five bits
-00041c 9300 2149                 	sts		Serial_Number,r16
-00041e 7e10                      	andi	r17,0xe0
-00041f 9516                      	lsr		r17	
-000420 e500                      	ldi		r16,0x50
-000421 0f10                      	add		r17,r16
-000422 9310 215b                 	sts		Spread_Factor,r17
-000424 9508                      	ret
+000425 9100 215d                 	lds		r16,Temporal
+000427 d01c                      	rcall	SerialNumber_Calculate
+000428 930f                      	push	r16
+000429 9100 215e                 	lds		r16,Temporal+1
+00042b d018                      	rcall	SerialNumber_Calculate
+00042c 2f10                      	mov		r17,r16								; High value
+00042d 910f                      	pop		r16									; Low value
+00042e 701f                      	andi	r17,0x0f
+00042f 9512                      	swap	r17
+000430 2b01                      	or		r16,r17								; Serial number readed
+000431 2f10                      	mov		r17,r16								; Save value
+000432 710f                      	andi	r16,0x1f							; Mask five bits
+000433 9300 2149                 	sts		Serial_Number,r16
+000435 7e10                      	andi	r17,0xe0
+000436 9516                      	lsr		r17	
+000437 e500                      	ldi		r16,0x50
+000438 0f10                      	add		r17,r16
+000439 9310 215b                 	sts		Spread_Factor,r17
+00043b 9508                      	ret
                                  
                                  SerialNumber_Table:
-000425 6063
-000426 585c
-000427 4e53
-000428 4249                      .db		0x63, 0x60, 0x5c, 0x58, 0x53, 0x4e, 0x49, 0x42
-000429 343b
-00042a 242c
-00042b 101b
-00042c 0005                      .db		0x3b, 0x34, 0x2c, 0x24, 0x1b, 0x10, 0x05, 0x00
+00043c 6063
+00043d 585c
+00043e 4e53
+00043f 4249                      .db		0x63, 0x60, 0x5c, 0x58, 0x53, 0x4e, 0x49, 0x42
+000440 343b
+000441 242c
+000442 101b
+000443 0005                      .db		0x3b, 0x34, 0x2c, 0x24, 0x1b, 0x10, 0x05, 0x00
                                  
                                  SerialNumber_Calculate:
-00042d e010                      	ldi		r17,0
-00042e e4ea                      	ldi		zl,	low(SerialNumber_Table*2)
-00042f e0f8                      	ldi		zh,	high(SerialNumber_Table*2)
+000444 e010                      	ldi		r17,0
+000445 e7e8                      	ldi		zl,	low(SerialNumber_Table*2)
+000446 e0f8                      	ldi		zh,	high(SerialNumber_Table*2)
                                  SerialNumber_Calculate_Loop:	
-000430 9513                      	inc		r17
-000431 9125                      	lpm		r18,z+	
-000432 1702                      	cp		r16,r18
-000433 f3e0                      	brlo	SerialNumber_Calculate_Loop
-000434 951a                      	dec		r17
-000435 2f01                      	mov		r16,r17	
+000447 9513                      	inc		r17
+000448 9125                      	lpm		r18,z+	
+000449 1702                      	cp		r16,r18
+00044a f3e0                      	brlo	SerialNumber_Calculate_Loop
+00044b 951a                      	dec		r17
+00044c 2f01                      	mov		r16,r17	
                                  SerialNumber_End:
                                  .include "TaskTimer.asm"
-000436 9508                      
+00044d 9508                      
                                   * TaskTimer.asm
                                   *
                                   *  Created: 14/04/2021 17:27:05
@@ -7591,143 +7623,143 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  ; Variables
                                  ;----------------------------------------------------
                                   .dseg
-00215e                            TaskTimer_Flags:	.byte 1
-00215f                            Timer_cs:			.byte 1
-002160                            Timer_ds:			.byte 1
-002161                            Timer_s:			.byte 1
+00215f                            TaskTimer_Flags:	.byte 1
+002160                            Timer_cs:			.byte 1
+002161                            Timer_ds:			.byte 1
+002162                            Timer_s:			.byte 1
                                  
                                  ;----------------------------------------------------
                                  ; Task Timer
                                  ;----------------------------------------------------
                                   .cseg
                                   TaskTimer: 
-000437 d058                      	rcall	TaskTimer_Init
+00044e d058                      	rcall	TaskTimer_Init
                                  TaskTimer_Loop:
-000438 940e 00c6                 	Task_Change
-00043a 9120 215e                 	lds		r18,TaskTimer_Flags
-00043c ff20                      	sbrs	r18,0
-00043d cffa                      	rjmp	TaskTimer_Loop
-00043e 7f2e                      	cbr		r18,0x01
+00044f 940e 00c6                 	Task_Change
+000451 9120 215f                 	lds		r18,TaskTimer_Flags
+000453 ff20                      	sbrs	r18,0
+000454 cffa                      	rjmp	TaskTimer_Loop
+000455 7f2e                      	cbr		r18,0x01
                                  ;	Update ms soft timers	
-00043f 9100 2164
-000441 5001
-000442 f010
-000443 9300 2164                 	Dec8	Tmr_ms	
+000456 9100 2165
+000458 5001
+000459 f010
+00045a 9300 2165                 	Dec8	Tmr_ms	
                                  	
-000445 ff21                      	sbrs	r18,1
-000446 c013                      	rjmp	TaskTimer_Update
-000447 7f2d                      	cbr		r18,0x02
+00045c ff21                      	sbrs	r18,1
+00045d c013                      	rjmp	TaskTimer_Update
+00045e 7f2d                      	cbr		r18,0x02
                                  ;	Update cs soft timers	
                                  
-000448 ff22                      	sbrs	r18,2
-000449 c010                      	rjmp	TaskTimer_Update
-00044a 7f2b                      	cbr		r18,0x04
+00045f ff22                      	sbrs	r18,2
+000460 c010                      	rjmp	TaskTimer_Update
+000461 7f2b                      	cbr		r18,0x04
                                  ;	Update ds soft timers		
-00044b 9100 2163
-00044d 5001
-00044e f010
-00044f 9300 2163                 	dec8	Button_Tmr_TimeoutPressed_ds
+000462 9100 2164
+000464 5001
+000465 f010
+000466 9300 2164                 	dec8	Button_Tmr_TimeoutPressed_ds
                                  
-000451 ff23                      	sbrs	r18,3
-000452 c007                      	rjmp	TaskTimer_Update
-000453 7f27                      	cbr		r18,0x08
+000468 ff23                      	sbrs	r18,3
+000469 c007                      	rjmp	TaskTimer_Update
+00046a 7f27                      	cbr		r18,0x08
                                  ;	Update s soft timers
-000454 9100 2105
-000456 5001
-000457 f010
-000458 9300 2105                 	dec8	Lora_Tmr_RxTimeout_s
+00046b 9100 2105
+00046d 5001
+00046e f010
+00046f 9300 2105                 	dec8	Lora_Tmr_RxTimeout_s
                                  
                                  TaskTimer_Update:
-00045a 9320 215e                 	sts		TaskTimer_Flags,r18
-00045c cfdb                      	rjmp	TaskTimer_Loop
+000471 9320 215f                 	sts		TaskTimer_Flags,r18
+000473 cfdb                      	rjmp	TaskTimer_Loop
                                  
                                  ;----------------------------------------------------
                                  ; ISR Timer 5D 
                                  ;----------------------------------------------------
                                  ISR_TCd5_OVF:
-00045d 930f                      	push	r16
-00045e 9100 003f                 	lds		r16,cpu_sreg
-000460 930f                      	push	r16
-000461 931f                      	push	r17
-000462 932f                      	push	r18
+000474 930f                      	push	r16
+000475 9100 003f                 	lds		r16,cpu_sreg
+000477 930f                      	push	r16
+000478 931f                      	push	r17
+000479 932f                      	push	r18
                                  
-000463 e001                      	ldi		r16,1
-000464 9300 094c                 	sts		tcd5_intflags,r16		; Clear flag 
+00047a e001                      	ldi		r16,1
+00047b 9300 094c                 	sts		tcd5_intflags,r16		; Clear flag 
                                  	
-000466 9110 215e                 	lds		r17,TaskTimer_Flags
-000468 6011                      	ori		r17,1					; ms flag
+00047d 9110 215f                 	lds		r17,TaskTimer_Flags
+00047f 6011                      	ori		r17,1					; ms flag
                                  
-000469 9100 215f                 	lds		r16,Timer_cs
-00046b 950a                      	dec		r16
-00046c 9300 215f                 	sts		timer_cs,r16
-00046e f4c1                      	brne	ISR_TCd5_OVF_update
-00046f e02a                      	ldi		r18,10
-000470 9320 215f                 	sts		Timer_cs,r18
-000472 6012                      	ori		r17,0x02
+000480 9100 2160                 	lds		r16,Timer_cs
+000482 950a                      	dec		r16
+000483 9300 2160                 	sts		timer_cs,r16
+000485 f4c1                      	brne	ISR_TCd5_OVF_update
+000486 e02a                      	ldi		r18,10
+000487 9320 2160                 	sts		Timer_cs,r18
+000489 6012                      	ori		r17,0x02
                                  
-000473 9100 2160                 	lds		r16,Timer_ds			; ds flag
-000475 950a                      	dec		r16
-000476 9300 2160                 	sts		Timer_ds,r16
-000478 f471                      	brne	ISR_TCd5_OVF_update
-000479 e02a                      	ldi		r18,10
-00047a 9320 2160                 	sts		Timer_ds,r18
-00047c 6014                      	ori		r17,0x04
+00048a 9100 2161                 	lds		r16,Timer_ds			; ds flag
+00048c 950a                      	dec		r16
+00048d 9300 2161                 	sts		Timer_ds,r16
+00048f f471                      	brne	ISR_TCd5_OVF_update
+000490 e02a                      	ldi		r18,10
+000491 9320 2161                 	sts		Timer_ds,r18
+000493 6014                      	ori		r17,0x04
                                  
-00047d 9100 2161                 	lds		r16,Timer_s				; s flag
-00047f 950a                      	dec		r16
-000480 9300 2161                 	sts		Timer_s,r16
-000482 f421                      	brne	ISR_TCd5_OVF_update
-000483 e02a                      	ldi		r18,10
-000484 9320 2161                 	sts		Timer_s,r18
-000486 6018                      	ori		r17,0x08
+000494 9100 2162                 	lds		r16,Timer_s				; s flag
+000496 950a                      	dec		r16
+000497 9300 2162                 	sts		Timer_s,r16
+000499 f421                      	brne	ISR_TCd5_OVF_update
+00049a e02a                      	ldi		r18,10
+00049b 9320 2162                 	sts		Timer_s,r18
+00049d 6018                      	ori		r17,0x08
                                  
                                  ISR_TCd5_OVF_update:
-000487 9310 215e                 	sts		TaskTimer_Flags,r17
-000489 912f                      	pop		r18
-00048a 911f                      	pop		r17
-00048b 910f                      	pop		r16
-00048c 9300 003f                 	sts		cpu_sreg,r16
-00048e 910f                      	pop		r16
-00048f 9518                      	reti
+00049e 9310 215f                 	sts		TaskTimer_Flags,r17
+0004a0 912f                      	pop		r18
+0004a1 911f                      	pop		r17
+0004a2 910f                      	pop		r16
+0004a3 9300 003f                 	sts		cpu_sreg,r16
+0004a5 910f                      	pop		r16
+0004a6 9518                      	reti
                                  
                                  ;----------------------------------------------------
                                  TaskTimer_Init:
-000490 e000                      	ldi		r16,0x00
-000491 9300 0940                 	sts		tcd5_ctrla,r16			;Turn off timer
-000493 9300 0946                 	sts		tcd5_intctrla,r16
-000495 9300 0947                 	sts		tcd5_intctrlb,r16		;Disable interruptions
-000497 e000                      	ldi		r16,0x00
-000498 9300 0941                 	sts		tcd5_ctrlb,r16			;Mode: Normal
-00049a 9300 0942                 	sts		tcd5_ctrlc,r16			
-00049c 9300 0943                 	sts		tcd5_ctrld,r16			
-00049e 9300 0944                 	sts		tcd5_ctrle,r16			
-0004a0 9300 0948                 	sts		tcd5_ctrlgclr,r16
-0004a2 9300 094a                 	sts		tcd5_ctrlhclr,r16
-0004a4 9300 094b                 	sts		tcd5_ctrlhset,r16
-0004a6 9300 0960                 	sts		tcd5_cnt,r16
-0004a8 9300 0961                 	sts		tcd5_cnt+1,r16
+0004a7 e000                      	ldi		r16,0x00
+0004a8 9300 0940                 	sts		tcd5_ctrla,r16			;Turn off timer
+0004aa 9300 0946                 	sts		tcd5_intctrla,r16
+0004ac 9300 0947                 	sts		tcd5_intctrlb,r16		;Disable interruptions
+0004ae e000                      	ldi		r16,0x00
+0004af 9300 0941                 	sts		tcd5_ctrlb,r16			;Mode: Normal
+0004b1 9300 0942                 	sts		tcd5_ctrlc,r16			
+0004b3 9300 0943                 	sts		tcd5_ctrld,r16			
+0004b5 9300 0944                 	sts		tcd5_ctrle,r16			
+0004b7 9300 0948                 	sts		tcd5_ctrlgclr,r16
+0004b9 9300 094a                 	sts		tcd5_ctrlhclr,r16
+0004bb 9300 094b                 	sts		tcd5_ctrlhset,r16
+0004bd 9300 0960                 	sts		tcd5_cnt,r16
+0004bf 9300 0961                 	sts		tcd5_cnt+1,r16
                                  
-0004aa ec0f                      	ldi		r16,low(Main_frequency/1000-1)
-0004ab e017                      	ldi		r17,high(Main_frequency/1000-1)
-0004ac 9300 0966                 	sts		tcd5_per,r16
-0004ae 9310 0967                 	sts		tcd5_per+1,r17
+0004c1 ec0f                      	ldi		r16,low(Main_frequency/1000-1)
+0004c2 e017                      	ldi		r17,high(Main_frequency/1000-1)
+0004c3 9300 0966                 	sts		tcd5_per,r16
+0004c5 9310 0967                 	sts		tcd5_per+1,r17
                                  
                                  ;	Clear local variables
-0004b0 2700                      	clr		r16
-0004b1 9300 215e                 	sts		TaskTimer_Flags,r16
-0004b3 e00a                      	ldi		r16,10
-0004b4 9300 215f                 	sts		Timer_cs,r16
-0004b6 9300 2160                 	sts		Timer_ds,r16
-0004b8 9300 2161                 	sts		Timer_s,r16
+0004c7 2700                      	clr		r16
+0004c8 9300 215f                 	sts		TaskTimer_Flags,r16
+0004ca e00a                      	ldi		r16,10
+0004cb 9300 2160                 	sts		Timer_cs,r16
+0004cd 9300 2161                 	sts		Timer_ds,r16
+0004cf 9300 2162                 	sts		Timer_s,r16
                                  
-0004ba ef07                      	ldi		r16,0xf7
-0004bb 9300 094c                 	sts		tcd5_intflags,r16		; Clear interruption flags
-0004bd e001                      	ldi		r16,0x01
-0004be 9300 0946                 	sts		tcd5_intctrla,r16		; OVF active on low level
-0004c0 e001                      	ldi		r16,0x01				
-0004c1 9300 0940                 	sts		tcd5_ctrla,r16			; Prescaler = 1
+0004d1 ef07                      	ldi		r16,0xf7
+0004d2 9300 094c                 	sts		tcd5_intflags,r16		; Clear interruption flags
+0004d4 e001                      	ldi		r16,0x01
+0004d5 9300 0946                 	sts		tcd5_intctrla,r16		; OVF active on low level
+0004d7 e001                      	ldi		r16,0x01				
+0004d8 9300 0940                 	sts		tcd5_ctrla,r16			; Prescaler = 1
                                  	
-0004c3 9508                      	ret
+0004da 9508                      	ret
                                  
                                  .include "Button.asm"
                                  
@@ -7737,75 +7769,75 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  
                                  ;----------------------------------------------------
                                  .dseg
-002162                           Button_Flag:					.byte 1
-002163                           Button_Tmr_TimeoutPressed_ds:	.byte 1
+002163                           Button_Flag:					.byte 1
+002164                           Button_Tmr_TimeoutPressed_ds:	.byte 1
                                  
                                  ;----------------------------------------------------
                                  .cseg
                                  Button_DetectLongPressed:
-0004c4 e302                      	ldi		r16,Button_TimeoutPressed_ds
-0004c5 9300 2163                 	sts		Button_Tmr_TimeoutPressed_ds,r16
+0004db e302                      	ldi		r16,Button_TimeoutPressed_ds
+0004dc 9300 2164                 	sts		Button_Tmr_TimeoutPressed_ds,r16
                                  Button_DetectLongPressed_Loop:
-0004c7 940e 00c6                 	Task_Change
-0004c9 9100 0608                 	lds		r16,porta_in
-0004cb 7100                      	andi	r16,0x10
-0004cc 3000                      	cpi		r16,0
-0004cd f031                      	breq	Button_DetectLongPressed_Ko
-0004ce 9100 2163                 	lds		r16,Button_Tmr_TimeoutPressed_ds
-0004d0 3000                      	cpi		r16,0
-0004d1 f7a9                      	brne	Button_DetectLongPressed_Loop
-0004d2 9418                      	sez
-0004d3 c001                      	rjmp	Button_DetectLongPressed_End
+0004de 940e 00c6                 	Task_Change
+0004e0 9100 0608                 	lds		r16,porta_in
+0004e2 7100                      	andi	r16,0x10
+0004e3 3000                      	cpi		r16,0
+0004e4 f031                      	breq	Button_DetectLongPressed_Ko
+0004e5 9100 2164                 	lds		r16,Button_Tmr_TimeoutPressed_ds
+0004e7 3000                      	cpi		r16,0
+0004e8 f7a9                      	brne	Button_DetectLongPressed_Loop
+0004e9 9418                      	sez
+0004ea c001                      	rjmp	Button_DetectLongPressed_End
                                  Button_DetectLongPressed_Ko:
-0004d4 9498                      	clz
+0004eb 9498                      	clz
                                  Button_DetectLongPressed_End:
-0004d5 9508                      	ret
+0004ec 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  Button_Config:
-0004d6 b70f                      	in		r16,cpu_sreg
-0004d7 930f                      	push	r16
-0004d8 94f8                      	cli		
+0004ed b70f                      	in		r16,cpu_sreg
+0004ee 930f                      	push	r16
+0004ef 94f8                      	cli		
                                  
-0004d9 e100                      	ldi		r16,0x10				; Button (PA4): Input-Pulldown
-0004da 9300 0602                 	sts		porta_dirclr,r16
-0004dc e100                      	ldi		r16,port_opc_pullDown_gc
-0004dd 9300 0614                 	sts		porta_pin4ctrl,r16
+0004f0 e100                      	ldi		r16,0x10				; Button (PA4): Input-Pulldown
+0004f1 9300 0602                 	sts		porta_dirclr,r16
+0004f3 e100                      	ldi		r16,port_opc_pullDown_gc
+0004f4 9300 0614                 	sts		porta_pin4ctrl,r16
                                  
-0004df e100                      	ldi		r16,0x10				
-0004e0 9300 060c                 	sts		porta_intflags,r16		; Clear pin interruption flag
-0004e2 9300 060a                 	sts		porta_intmask,r16		; Set interrupt pint
+0004f6 e100                      	ldi		r16,0x10				
+0004f7 9300 060c                 	sts		porta_intflags,r16		; Clear pin interruption flag
+0004f9 9300 060a                 	sts		porta_intmask,r16		; Set interrupt pint
                                  
-0004e4 e000                      	ldi		r16,0x00
-0004e5 9300 0609                 	sts		porta_intctrl,r16		; Disable interrupt
+0004fb e000                      	ldi		r16,0x00
+0004fc 9300 0609                 	sts		porta_intctrl,r16		; Disable interrupt
                                  
-0004e7 910f                      	pop		r16
-0004e8 bf0f                      	out		cpu_sreg,r16
-0004e9 9508                      	ret
+0004fe 910f                      	pop		r16
+0004ff bf0f                      	out		cpu_sreg,r16
+000500 9508                      	ret
                                  ;----------------------------------------------------
                                  Button_Reset:
-0004ea b70f                      	in		r16,cpu_sreg
-0004eb 930f                      	push	r16
-0004ec 94f8                      	cli	
-0004ed e000                      	ldi		r16,0x00
-0004ee 9300 2162                 	sts		Button_flag,r16				; Clear user flag
-0004f0 e100                      	ldi		r16,0x10
-0004f1 9300 060c                 	sts		porta_intflags,r16			; Clear interrupt
-0004f3 e001                      	ldi		r16,0x01
-0004f4 9300 0609                 	sts		porta_intctrl,r16			; Low level interrupt		
-0004f6 910f                      	pop		r16
-0004f7 bf0f                      	out		cpu_sreg,r16
-0004f8 9508                      	ret
+000501 b70f                      	in		r16,cpu_sreg
+000502 930f                      	push	r16
+000503 94f8                      	cli	
+000504 e000                      	ldi		r16,0x00
+000505 9300 2163                 	sts		Button_flag,r16				; Clear user flag
+000507 e100                      	ldi		r16,0x10
+000508 9300 060c                 	sts		porta_intflags,r16			; Clear interrupt
+00050a e001                      	ldi		r16,0x01
+00050b 9300 0609                 	sts		porta_intctrl,r16			; Low level interrupt		
+00050d 910f                      	pop		r16
+00050e bf0f                      	out		cpu_sreg,r16
+00050f 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  ISR_Porta:	
-0004f9 930f                      	push	r16
-0004fa e000                      	ldi		r16,0x00
-0004fb 9300 0609                 	sts		porta_intctrl,r16			; Disable interrupt
-0004fd e001                      	ldi		r16,0x01
-0004fe 9300 2162                 	sts		Button_flag,r16				; Set user flag
-000500 910f                      	pop		r16
-000501 9518                      	reti
+000510 930f                      	push	r16
+000511 e000                      	ldi		r16,0x00
+000512 9300 0609                 	sts		porta_intctrl,r16			; Disable interrupt
+000514 e001                      	ldi		r16,0x01
+000515 9300 2163                 	sts		Button_flag,r16				; Set user flag
+000517 910f                      	pop		r16
+000518 9518                      	reti
                                  
                                  ;----------------------------------------------------
                                  
@@ -7880,95 +7912,101 @@ C:\Users\diacs\Documents\Owen\Diacsa_OI_Temperature\nodo\TaskMain.asm(57): Inclu
                                  ; Variables
                                  ;----------------------------------------------------
                                  .dseg
-002164                           Tmr_ms:	.byte 1
+002165                           Tmr_ms:	.byte 1
                                  
                                  ;----------------------------------------------------
                                  ; Main program
                                  ;----------------------------------------------------
                                  .cseg
-                                 TaskMain:	
-                                 	;rjmp	Test
-000502 decc                      	rcall	Battery_Read
-000503 dee0                      	rcall	Battery_CheckIfCritical					; If battery low turn off device
-000504 dc10                      	rcall	Eeprom_ReadSamplingTime					; Read sampling time
-000505 ddcc                      	rcall	Rtc_Config								; Configure timer to wake up from sleep
-000506 dfcf                      	rcall	Button_Config							; Configure button to wake up from sleep
+                                 TaskMain:		
+                                 	;rjmp   Read_BatMin	
+                                 	;rjmp   Read_BatCritic	
+000519 debb                      	rcall	Battery_Read
+00051a dedc                      	rcall	Battery_CheckIfCritical					; If battery low turn off device
+00051b dbf9                      	rcall	Eeprom_ReadSamplingTime					; Read sampling time
+00051c ddbb                      	rcall	Rtc_Config								; Configure timer to wake up from sleep
+00051d dfcf                      	rcall	Button_Config							; Configure button to wake up from sleep
                                  TaskMain_Loop:	
-000507 e002
-000508 9300 0605                 	TurnOnLed
-00050a ddf3                      	rcall	Sensors_Read							; Read serial number, battery level and thermocouples
-00050b dc5b                      	rcall	Lora_Transmit							; Transmist packet through Lora
-00050c e002
-00050d 9300 0606                 	TurnOffLed
-00050f d00a                      	rcall	LoPower									; To sleep
-000510 debe                      	rcall	Battery_Read
-000511 ded2                      	rcall	Battery_CheckIfCritical					; If battery low turn off device	
-000512 9100 2162                 	lds		r16,Button_Flag
-000514 3001                      	cpi		r16,1									; If wake up is due to button wait for long pressed
-000515 f789                      	brne	TaskMain_Loop
-000516 dfad                      	rcall	Button_DetectLongPressed
-000517 f779                      	brne	TaskMain_Loop
-000518 dc53                      	rcall	Lora_Reception							; Receive Lora Message
-000519 cfed                      	rjmp	TaskMain_Loop
+00051e e002
+00051f 9300 0605                 	TurnOnLed
+000521 dde2                      	rcall	Sensors_Read							; Read serial number, battery level and thermocouples
+000522 dc44                      	rcall	Lora_Transmit							; Transmist packet through Lora
+000523 e002
+000524 9300 0606                 	TurnOffLed
+000526 d00a                      	rcall	LoPower									; To sleep
+000527 dead                      	rcall	Battery_Read
+000528 dece                      	rcall	Battery_CheckIfCritical					; If battery low turn off device	
+000529 9100 2163                 	lds		r16,Button_Flag
+00052b 3001                      	cpi		r16,1									; If wake up is due to button wait for long pressed
+00052c f789                      	brne	TaskMain_Loop
+00052d dfad                      	rcall	Button_DetectLongPressed
+00052e f779                      	brne	TaskMain_Loop
+00052f dc3c                      	rcall	Lora_Reception							; Receive Lora Message
+000530 cfed                      	rjmp	TaskMain_Loop
                                  
                                  ;----------------------------------------------------
                                  LoPower:
-00051a 94f8                      	cli	
-00051b dda4                      	rcall	RTC_Reset								; Clear RTC variables
-00051c dfcd                      	rcall	Button_reset							; Clear button variables
-00051d e007                      	ldi		r16,0x07
-00051e 9300 0048                 	sts		sleep_ctrl,r16							; Power save mode & sleep
-000520 9478                      	sei
-000521 9588                      	sleep
-000522 9508                      	ret
+000531 94f8                      	cli	
+000532 dd93                      	rcall	RTC_Reset								; Clear RTC variables
+000533 dfcd                      	rcall	Button_reset							; Clear button variables
+000534 e007                      	ldi		r16,0x07
+000535 9300 0048                 	sts		sleep_ctrl,r16							; Power save mode & sleep
+000537 9478                      	sei
+000538 9588                      	sleep
+000539 9508                      	ret
                                  
                                  ;----------------------------------------------------
                                  DelayMs:
-000523 9300 2164                 	sts Tmr_ms,r16
+00053a 9300 2165                 	sts Tmr_ms,r16
                                  DelayMs_Loop:
-000525 940e 00c6                 	Task_Change
-000527 9100 2164                 	lds		r16,Tmr_ms
-000529 3000                      	cpi		r16,0
-00052a f7d1                      	brne	DelayMs_Loop
-00052b 9508                      	ret
+00053c 940e 00c6                 	Task_Change
+00053e 9100 2165                 	lds		r16,Tmr_ms
+000540 3000                      	cpi		r16,0
+000541 f7d1                      	brne	DelayMs_Loop
+000542 9508                      	ret
                                  
                                  ;----------------------------------------------------
-                                 Test:	
-00052c e800                      	ldi		r16,0x80
-00052d 9300 0605                 	sts		porta_outset,r16
-00052f e110                      	ldi		r17,ADC_REFSEL_INTVCC_gc
-000530 e029                      	ldi		r18,ADC_SAMPNUM_512X_gc
-000531 dbc8                      	rcall	Adc_on
-000532 e003                      	ldi		r16,3
-000533 dfef                      	rcall	DelayMs	
+                                 Read_BatMin:
+000543 e008                      	ldi		r16,0x08
+000544 9300 0605                 	sts		porta_outset,r16						; Enable power for battery measurement
+000546 e010                      	ldi		r17,ADC_REFSEL_INT1V_gc 
+000547 e028                      	ldi		r18,ADC_SAMPNUM_256X_gc
+000548 dbb1                      	rcall	Adc_On									; Configure Adc
+000549 e003                      	ldi		r16,3
+00054a dfef                      	rcall	DelayMs									; Delay for stable signal
+00054b e100                      	ldi		r16, ADC_CH_MUXPOS_PIN2_gc
+00054c db96                      	rcall	Adc_Read								; Read battery
+00054d 0f11                      	lsl		r17
+00054e 1f00                      	rol		r16
+00054f e1b0                      	ldi		xh,high(EEdir_BatMin)
+000550 e0a3                      	ldi		xl,low(EEdir_BatMin)	
+000551 dbd6                      	rcall	Eeprom_Write
+000552 e008                      	ldi		r16,0x08
+000553 9300 0606                 	sts		porta_outclr,r16						; Disable power for battery measurement
+000555 dbbb                      	rcall	Adc_Off									; Turn off Adc		
+                                 Read_BatMin_End:
+000556 cfff                      	rjmp	Read_BatMin_End
                                  
-000534 e400                      	ldi		r16, ADC_CH_MUXPOS_PIN8_gc
-000535 dbad                      	rcall	Adc_Read	
-000536 9300 215c                 	sts		Temporal,r16
-                                 		
-000538 e408                      	ldi		r16, ADC_CH_MUXPOS_PIN9_gc
-000539 dba9                      	rcall	Adc_Read	
-00053a 9300 215d                 	sts		Temporal+1,r16
-                                 	
-00053c 9100 215c                 	lds		r16,Temporal
-00053e deee                      	rcall	SerialNumber_Calculate
-00053f 930f                      	push	r16
-000540 9100 215d                 	lds		r16,Temporal+1
-000542 deea                      	rcall	SerialNumber_Calculate
-000543 2f10                      	mov		r17,r16								; High value
-000544 910f                      	pop		r16									; Low value
-000545 701f                      	andi	r17,0x0f
-000546 9512                      	swap	r17
-000547 2b01                      	or		r16,r17								; Serial number readed
-000548 2f10                      	mov		r17,r16								; Save value
-000549 710f                      	andi	r16,0x1f							; Mask five bits
-00054a 9300 2149                 	sts		Serial_Number,r16
-00054c 7e10                      	andi	r17,0xe0
-00054d 9516                      	lsr		r17	
-00054e e500                      	ldi		r16,0x50
-00054f 0f10                      	add		r17,r16
-000550 9310 215b                 	sts		Spread_Factor,r17
-                                 
+                                 ;----------------------------------------------------
+                                 Read_BatCritic:
+000557 e008                      	ldi		r16,0x08
+000558 9300 0605                 	sts		porta_outset,r16						; Enable power for battery measurement
+00055a e010                      	ldi		r17,ADC_REFSEL_INT1V_gc 
+00055b e028                      	ldi		r18,ADC_SAMPNUM_256X_gc
+00055c db9d                      	rcall	Adc_On									; Configure Adc
+00055d e003                      	ldi		r16,3
+00055e dfdb                      	rcall	DelayMs									; Delay for stable signal
+00055f e100                      	ldi		r16, ADC_CH_MUXPOS_PIN2_gc
+000560 db82                      	rcall	Adc_Read								; Read battery
+000561 0f11                      	lsl		r17
+000562 1f00                      	rol		r16
+000563 e1b0                      	ldi		xh,high(EEdir_BatCritic)
+000564 e0a2                      	ldi		xl,low(EEdir_BatCritic)	
+000565 dbc2                      	rcall	Eeprom_Write
+000566 e008                      	ldi		r16,0x08
+000567 9300 0606                 	sts		porta_outclr,r16						; Disable power for battery measurement
+000569 dba7                      	rcall	Adc_Off									; Turn off Adc		
+                                 Read_BatCritic_End:
 
 
 RESOURCE USE INFORMATION
@@ -7986,41 +8024,41 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATxmega32E5" register use summary:
-x  :   9 y  :   2 z  :   3 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
+x  :  11 y  :   2 z  :   3 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 520 r17: 119 r18:  38 r19:   0 r20:   0 
-r21:   0 r22:   0 r23:   0 r24:   0 r25:   0 r26:  37 r27:  23 r28:  12 
+r13:   0 r14:   0 r15:   0 r16: 520 r17: 126 r18:  39 r19:   0 r20:   0 
+r21:   0 r22:   0 r23:   0 r24:   0 r25:   0 r26:  41 r27:  27 r28:  12 
 r29:  13 r30:   2 r31:   2 
 Registers used: 12 out of 35 (34.3%)
 
 "ATxmega32E5" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   3 add   :   5 adiw  :   1 and   :   1 
-andi  :  11 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+.lds  :   0 .sts  :   0 adc   :   3 add   :   4 adiw  :   1 and   :   1 
+andi  :   8 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   1 brcs  :   3 break :   0 breq  :   4 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   2 brlt  :   0 brmi  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   3 brlt  :   0 brmi  :   0 
 brne  :  16 brpl  :   0 brsh  :   2 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   5 cbi   :   0 cbr   :   4 
-clc   :   0 clh   :   0 cli   :   8 cln   :   0 clr   :   5 cls   :   0 
-clt   :   0 clv   :   0 clz   :   3 com   :   0 cp    :   4 cpc   :   1 
+clc   :   0 clh   :   0 cli   :   8 cln   :   0 clr   :   6 cls   :   0 
+clt   :   0 clv   :   0 clz   :   3 com   :   0 cp    :   5 cpc   :   1 
 cpi   :  10 cpse  :   0 dec   :   5 des   :   0 eor   :   0 fmul  :   0 
 fmuls :   0 fmulsu:   0 icall :   0 ijmp  :   0 in    :   6 inc   :   3 
-jmp   :   0 lac   :   0 las   :   0 lat   :   0 ld    :   3 ldd   :   0 
-ldi   : 278 lds   :  63 lpm   :   3 lsl   :   3 lsr   :   2 mov   :  20 
+jmp   :   0 lac   :   0 las   :   0 lat   :   0 ld    :   5 ldd   :   0 
+ldi   : 292 lds   :  62 lpm   :   3 lsl   :   7 lsr   :   1 mov   :  20 
 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 neg   :   0 nop   :   2 
-or    :   7 ori   :   7 out   :  10 pop   :  13 push  :  13 rcall : 149 
-ret   :  46 reti  :   3 rjmp  :  21 rol   :   1 ror   :   0 sbc   :   0 
+or    :   6 ori   :   7 out   :  10 pop   :  12 push  :  12 rcall : 153 
+ret   :  46 reti  :   3 rjmp  :  25 rol   :   3 ror   :   0 sbc   :   0 
 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 sbiw  :   1 sbr   :   0 
-sbrc  :   4 sbrs  :   7 sec   :   0 seh   :   0 sei   :   4 sen   :   0 
+sbrc  :   5 sbrs  :   7 sec   :   0 seh   :   0 sei   :   4 sen   :   0 
 ser   :   0 ses   :   0 set   :   0 sev   :   0 sez   :   3 sleep :   1 
-spm   :   0 st    :   8 std   :   0 sts   : 218 sub   :   0 subi  :   3 
-swap  :   2 tst   :   0 wdr   :   0 xch   :   0 
-Instructions used: 50 out of 118 (42.4%)
+spm   :   0 st    :   8 std   :   0 sts   : 218 sub   :   1 subi  :   3 
+swap  :   1 tst   :   0 wdr   :   0 xch   :   0 
+Instructions used: 51 out of 118 (43.2%)
 
 "ATxmega32E5" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000aa6   2568     20   2588   36864   7.0%
-[.dseg] 0x002000 0x002165      0    357    357    4096   8.7%
+[.cseg] 0x000000 0x000ad6   2616     20   2636   36864   7.2%
+[.dseg] 0x002000 0x002166      0    358    358    4096   8.7%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
 Assembly complete, 0 errors, 0 warnings

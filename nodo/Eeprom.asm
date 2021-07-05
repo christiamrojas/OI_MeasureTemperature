@@ -1,9 +1,15 @@
 ;----------------------------------------------------
 ; Eeprom
 ;----------------------------------------------------
+.equ EEdir_Time			= 0x1000
+.equ EEdir_BatCritic	= 0x1002
+.equ EEdir_Batmin		= 0x1003
+.equ EEdir_Batmax		= 0x1004
+
+;----------------------------------------------------
 Eeprom_ReadSamplingTime:
-	ldi		xh,high(0x1000)
-	ldi		xl,low(0x1000)
+	ldi		xh,high(EEdir_Time)
+	ldi		xl,low(EEdir_Time)
 	rcall	Eeprom_Read				
 	mov		r17,r16
 	rcall	Eeprom_Read
@@ -15,8 +21,8 @@ Eeprom_ReadSamplingTime:
 Eeprom_WriteSamplingTime:
 	mov		yl,xl
 	mov		yh,xh
-	ldi		xh,high(0x1000)
-	ldi		xl,low(0x1000)
+	ldi		xh,high(EEdir_Time)
+	ldi		xl,low(EEdir_Time)
 	mov		r16,yl
 	rcall	Eeprom_Write
 	mov		r16,yh
@@ -33,7 +39,7 @@ Eeprom_Read:
 ;----------------------------------------------------
 ; Input:	(X) <-- r16
 Eeprom_Write:
-	ldi		r17,0x035
+	ldi		r17,0x35
 	sts		nvm_cmd,r17
 	clr		r17
 	st		x,r16

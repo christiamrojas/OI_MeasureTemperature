@@ -90,11 +90,11 @@ int lgw_spi_open(SPIClass** spi_target_ptr) {
     
     if (_reset!= -1) {
         pinMode(_reset, OUTPUT);        
-        digitalWrite(_reset, LOW);
-        vTaskDelay(100/portTICK_PERIOD_MS);
         digitalWrite(_reset, HIGH);
-        vTaskDelay(2000/portTICK_PERIOD_MS);
+        vTaskDelay(100/portTICK_PERIOD_MS);
         digitalWrite(_reset, LOW);
+        vTaskDelay(2000/portTICK_PERIOD_MS);
+        //digitalWrite(_reset, HIGH);
     } 
     
     //puntero hacia el spi del sistema

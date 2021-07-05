@@ -19,27 +19,28 @@ void Btserial_CheckCommand(BluetoothSerial *Btserial, RTC *rtc, Node_TxConfig_St
     
 }
 // Channel = 916800000,917000000,917200000,917400000,917600000,917800000,918000000,918200000
-//Example: Node=01 6 12 0100\n (Node Channel SpreadF Sampling)
+//Example: Node=01 6 7 0100\n (Node Channel SpreadF Sampling)
 bool Btserial_CheckCommand_SetTxPeriod(char *cad, BluetoothSerial *Btserial, Node_TxConfig_Struct *Node_TxConfig)
 {
     if(strncmp(cad,"Node=",5)!=0)   return false;
-    if( (cad[7]!=' ')  || (cad[9]!=' ') || (cad[12]!=' ') )   return false;
+    if( (cad[7]!=' ')  || (cad[9]!=' ') || (cad[11]!=' ') )   return false;
     
     uint16_t d; 
-    d = (cad[5]-'0')*10 + cad[6]-'0';
+    
+    d = (cad[5]-'0')*10 + cad[6]-'0';                       // Node ID
     if( (d>32) || (d==0) )    return false; 
-    Node_TxConfig->NodeAddr = (uint8_t)(d)-1; 
+    Node_TxConfig->NodeAddr = (uint8_t)(d);
 
-    d = cad[8]-'0';
-    if(d>8)    return false; 
+    d = cad[8]-'0';                                         // Channel
+    if(d>7)    return false; 
     Node_TxConfig->FrequencyId = (uint8_t)(d); 
 
-    d = (cad[10]-'0')*10 + cad[11]-'0';
-    if( (d>13) || (d<7) ) return false; 
+    d = cad[10]-'0';                                        // Spread factor
+    if( (d>7) || (d<1) ) return false;
     Node_TxConfig->SpreadFactor = (uint8_t)(d); 
 
-    d = (cad[13]-'0')*1000 + (cad[14]-'0')*100 + (cad[15]-'0')*10 + (cad[16]-'0');
-    if(d>3600) return false; 
+    d = (cad[12]-'0')*1000 + (cad[13]-'0')*100 + (cad[14]-'0')*10 + (cad[15]-'0');
+    if( (d>3600) || (d==0) ) return false; 
     Node_TxConfig->SampleTime = d; 
 
     Node_TxConfig->Update = true; 
